@@ -15,4 +15,3 @@ Route::get('/', function()
 {
 	return View::make('hello');
 });
-Route::get("qbadmin/home",array("as"=>"admin","uses"=>"HomeController@showHome"));
