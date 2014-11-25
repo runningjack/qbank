@@ -13,5 +13,11 @@
 
 Route::get('/', function()
 {
-	return View::make('hello');
+	return View::make('dashboard/home');
 });
+
+Route::get("dashboard/home",array("as"=>"home","uses"=>"HomeController@showHome"));
+Route::get("role/list", array("as"=>"rolelisting","uses"=>"HomeController@showRole"));
+Route::get("module/list", array("as"=>"modulelist","uses"=>"HomeController@showModule"));
+Route::get("question/add", array("as"=>"addquestion","uses"=>"QuestionController@showAddQuestion"));
+Route::get("question/list", array("as"=>"listquestion","uses"=>"QuestionController@showQuestion"));

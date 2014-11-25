@@ -20,4 +20,18 @@ class HomeController extends BaseController {
 		return View::make('hello');
 	}
 
+    public function showHome(){
+        return View::make("dashboard.home");
+    }
+
+    public function showRole(){
+        return View::make("role.list")
+            ->with("title","Role Listing");
+    }
+
+    public function showModule(){
+        return View::make("module.list")
+            ->with("title","Module Listing");
+    }
+
 }
