@@ -232,57 +232,7 @@ Since the inception of the trend in the business world where IT (Information Tec
     </div>
 </article>
 <!-- WIDGET END -->
-<div style="visibility: hidden" id="option-template">
-    <div class="row">
-        <div class="col-md-1">
 
-            <label class="radio">
-                <input type="radio" name="rad-ans-opt" id="rad-ans-opt">
-                <i></i>
-            </label>
-
-        </div>
-        <div class="col-md-9">
-            <div class="btn-toolbar edt-hidden" data-role="editor-toolbar" data-target="#editoroption3">
-
-                <div class="btn-group">
-                    <a class="btn btn-primary" data-edit="bold" title="" data-original-title="Bold (Ctrl/Cmd+B)"><i class="glyphicon glyphicon-bold"></i></a>
-                    <a class="btn btn-primary" data-edit="italic" title="" data-original-title="Italic (Ctrl/Cmd+I)"><i class="glyphicon glyphicon-italic"></i></a>
-                    <a class="btn btn-primary" data-edit="underline" title="" data-original-title="Underline (Ctrl/Cmd+U)"><i class="glyphicon glyphicon-text-width"></i></a>
-                </div>
-
-                <div class="btn-group">
-                    <a class="btn btn-primary dropdown-toggle" data-toggle="dropdown" title="" data-original-title="Hyperlink"><i class="glyphicon glyphicon-link"></i></a>
-                    <div class="dropdown-menu input-append">
-                        <input class="span2" placeholder="URL" type="text" data-edit="createLink">
-                        <button class="btn" type="button">Add</button>
-                    </div>
-                    <a class="btn btn-primary" data-edit="unlink" title="" data-original-title="Remove Hyperlink"><i class="glyphicon glyphicon-remove"></i></a>
-
-                </div>
-
-                <div class="btn-group">
-                    <a class="btn btn-primary" title="" id="pictureBtn" data-original-title="Insert picture (or just drag &amp; drop)"><i class="glyphicon glyphicon-picture"></i></a>
-                    <input type="file" data-role="magic-overlay" data-target="#pictureBtn" data-edit="insertImage" style="opacity: 0; position: absolute; top: 0px; left: 0px; width: 37px; height: 30px;">
-                </div>
-
-            </div>
-
-            <div id="editoroption3" class="well" style="padding: 5px !important">
-                Go ahead..
-            </div>
-        </div>
-        <div class="col-md-2" style="text-align: left; ">
-            <div class="padd-control" style="text-align: left !important; margin-top: 30px ">
-                <span><a href="javascript:void(0);" class="btn btn-success btn-circle add-option"><i class="glyphicon glyphicon-plus"></i></a></span>
-                <span><a href="javascript:void(0);" class="btn btn-danger btn-circle remove-option"><i class="glyphicon glyphicon-minus"></i></a></span>
-            </div>
-        </div>
-    </div>
-
-
-
-</div>
 <article class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
     <div class="jarviswidget jarviswidget-color-blueDark" id="wid-id-1" data-widget-editbutton="false">
         <header>
@@ -297,12 +247,16 @@ Since the inception of the trend in the business world where IT (Information Tec
 
                 <div class="tabbable tabs-below">
                     <div class="tab-content padding-10">
-                        <div class="tab-pane" id="AA">
-                            <div class="">
-                            <form class="form-horizontal">
-                            <h1>Question</h1>
-                            <div class="row">
-                                <div class="col-md-12">
+                        <div class="tab-pane active" id="AA">
+                            <div id="multiple-choice" class="anstypetemplate" question-type="multiple-choice">
+                            <form class="smart-form" style="border:1px solid #c3c3c3">
+                            <header>
+                                <h1>Question</h1>
+                            </header>
+
+                            <fieldset>
+                                <div class="row">
+                                <section  class="col col-md-12">
 
                                     <div class="btn-toolbar edt-hidden" data-role="editor-toolbar" data-target="#editor">
 
@@ -332,11 +286,14 @@ Since the inception of the trend in the business world where IT (Information Tec
                                     <div id="editor" class="well" style="padding: 5px !important">
                                         Go ahead..
                                     </div>
+
+                                </section>
                                 </div>
-                            </div>
+                            </fieldset>
                             <hr>
+                            <fieldset>
                             <div class="row">
-                                <div class="col-md-1 right">
+                                <section class="col col-md-1">
 
                                     <label class="radio">
                                         <input type="radio" name="rad-ans-opt" id="rad-ans-opt">
@@ -344,8 +301,8 @@ Since the inception of the trend in the business world where IT (Information Tec
                                     </label>
 
 
-                                </div>
-                                <div class="col-md-9">
+                                </section>
+                                <section class="col col-md-9">
                                     <div class="btn-toolbar edt-hidden" data-role="editor-toolbar" data-target="#editoroption2">
 
                                         <div class="btn-group">
@@ -373,25 +330,25 @@ Since the inception of the trend in the business world where IT (Information Tec
                                     <div id="editoroption2" class="well" style="padding: 5px !important">
                                         Go ahead..
                                     </div>
-                                </div>
-                                <div class="col-md-2" style="text-align: left; ">
+                                </section>
+                                <section class="col col-md-2" style="text-align: left; ">
                                     <div class="padd-control" style="text-align: left !important; margin-top: 30px ">
                                         <span><a href="javascript:void(0);" class="btn btn-success btn-circle add-option"><i class="glyphicon glyphicon-plus"></i></a></span>
                                         <span><a href="javascript:void(0);" class="btn btn-danger btn-circle remove-option"><i class="glyphicon glyphicon-minus"></i></a></span>
                                     </div>
-                                </div>
+                                </section>
                             </div>
 
                             <div class="row">
-                                <div class="col-md-1">
+                                <section class="col col-md-1">
 
                                     <label class="radio">
                                         <input type="radio" name="rad-ans-opt" id="rad-ans-opt">
                                         <i></i>
                                     </label>
 
-                                </div>
-                                <div class="col-md-9">
+                                </section>
+                                <section class="col col-md-9">
                                     <div class="btn-toolbar edt-hidden" data-role="editor-toolbar" data-target="#editoroption3">
 
                                         <div class="btn-group">
@@ -420,20 +377,18 @@ Since the inception of the trend in the business world where IT (Information Tec
                                     <div id="editoroption3" class="well" style="padding: 5px !important">
                                         Go ahead..
                                     </div>
-                                </div>
-                                <div class="col-md-2" style="text-align: left; ">
+                                </section>
+                                <section class="col col-md-2" style="text-align: left; ">
                                     <div class="padd-control" style="text-align: left !important; margin-top: 30px ">
                                         <span><a href="javascript:void(0);" class="btn btn-success btn-circle add-option"><i class="glyphicon glyphicon-plus"></i></a></span>
                                         <span><a href="javascript:void(0);" class="btn btn-danger btn-circle remove-option"><i class="glyphicon glyphicon-minus"></i></a></span>
                                     </div>
-                                </div>
+                                </section>
                             </div>
 
 
-
-
                             <div class="row">
-                                <div class="col-md-1">
+                                <section class="col col-md-1">
 
                                     <label class="radio">
                                         <input type="radio" name="rad-ans-opt" id="rad-ans-opt4">
@@ -441,8 +396,8 @@ Since the inception of the trend in the business world where IT (Information Tec
                                     </label>
 
 
-                                </div>
-                                <div class="col-md-9">
+                                </section>
+                                <section class="col col-md-9">
                                     <div class="btn-toolbar edt-hidden" data-role="editor-toolbar" data-target="#editoroption4">
 
                                         <div class="btn-group">
@@ -471,18 +426,17 @@ Since the inception of the trend in the business world where IT (Information Tec
                                     <div id="editoroption4" class="well" style="padding: 5px !important">
                                         Go ahead..
                                     </div>
-                                </div>
-                                <div class="col-md-2" style="text-align: left; ">
+                                </section>
+                                <section class="col col-md-2" style="text-align: left; ">
                                     <div class="padd-control" style="text-align: left !important; margin-top: 30px ">
                                         <span><a href="javascript:void(0);" class="btn btn-success btn-circle add-option"><i class="glyphicon glyphicon-plus"></i></a></span>
                                         <span><a href="javascript:void(0);" class="btn btn-danger btn-circle remove-option"><i class="glyphicon glyphicon-minus"></i></a></span>
                                     </div>
-                                </div>
+                                </section>
                             </div>
 
-
                             <div class="row">
-                                <div class="col-md-1">
+                                <section class="col col-md-1">
 
                                     <label class="radio">
                                         <input type="radio"  name="rad-ans-opt" id="rad-ans-opt5" style="border:1px solid #000000 !important">
@@ -490,8 +444,8 @@ Since the inception of the trend in the business world where IT (Information Tec
                                     </label>
 
 
-                                </div>
-                                <div class="col-md-9">
+                                </section>
+                                <section class="col col-md-9">
                                     <div class="btn-toolbar edt-hidden" data-role="editor-toolbar" data-target="#editoroption5">
 
 
@@ -521,19 +475,131 @@ Since the inception of the trend in the business world where IT (Information Tec
                                     <div id="editoroption5" class="well " style="padding: 5px !important">
                                         Go ahead..
                                     </div>
-                                </div>
-                                <div class="col-md-2" style="text-align: left; ">
+                                </section>
+                                <section class="col col-md-2" style="text-align: left; ">
                                     <div class="padd-control" style="text-align: left !important; margin-top: 30px ">
                                         <span><a href="javascript:void(0);" class="btn btn-success btn-circle add-option"><i class="glyphicon glyphicon-plus"></i></a></span>
                                         <span><a href="javascript:void(0);" class="btn btn-danger btn-circle remove-option"><i class="glyphicon glyphicon-minus"></i></a></span>
                                     </div>
-                                </div>
+                                </section>
                             </div>
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <a class="btn btn-success " href="javascript:void(0);"><i class="fa fa-check"></i> Save</a>
+                            </fieldset>
+                            <footer>
+                                <div class="row">
+
+                                    <section class="col col-md-8">
+                                        <label >
+                                            <input type="radio" name="chkbox" id="chkbox">
+                                            <i></i>Toggle to change answer option control</label>
+
+                                    </section>
+
+                                    <section class="col col-md-2">
+                                        <a class="btn btn-success " href="javascript:void(0);"><i class="fa fa-check"></i> Save</a>
+                                    </section>
                                 </div>
+                            </footer>
+                            </form>
                             </div>
+
+
+                            <!--This section is to store single line comm
+                            ent-->
+                            <div class="anstypetemplate" question-type="single-answer">
+                            <form class="smart-form" style="border:1px solid #c3c3c3">
+                            <header>
+                                <h1>Question</h1>
+                            </header>
+
+                            <fieldset>
+                                <div class="row">
+                                    <section  class="col col-md-12">
+
+                                        <div class="btn-toolbar edt-hidden" data-role="editor-toolbar" data-target="#editor">
+
+                                            <div class="btn-group">
+                                                <a class="btn btn-primary" data-edit="bold" title="" data-original-title="Bold (Ctrl/Cmd+B)"><i class="glyphicon glyphicon-bold"></i></a>
+                                                <a class="btn btn-primary" data-edit="italic" title="" data-original-title="Italic (Ctrl/Cmd+I)"><i class="glyphicon glyphicon-italic"></i></a>
+                                                <a class="btn btn-primary" data-edit="underline" title="" data-original-title="Underline (Ctrl/Cmd+U)"><i class="glyphicon glyphicon-text-width"></i></a>
+                                            </div>
+
+                                            <div class="btn-group">
+                                                <a class="btn btn-primary dropdown-toggle" data-toggle="dropdown" title="" data-original-title="Hyperlink"><i class="glyphicon glyphicon-link"></i></a>
+                                                <div class="dropdown-menu input-append">
+                                                    <input class="span2" placeholder="URL" type="text" data-edit="createLink">
+                                                    <button class="btn" type="button">Add</button>
+                                                </div>
+                                                <a class="btn btn-primary" data-edit="unlink" title="" data-original-title="Remove Hyperlink"><i class="glyphicon glyphicon-remove"></i></a>
+
+                                            </div>
+
+                                            <div class="btn-group">
+                                                <a class="btn btn-primary" title="" id="pictureBtn" data-original-title="Insert picture (or just drag &amp; drop)"><i class="glyphicon glyphicon-picture"></i></a>
+                                                <input type="file" data-role="magic-overlay" data-target="#pictureBtn" data-edit="insertImage" style="opacity: 0; position: absolute; top: 0px; left: 0px; width: 37px; height: 30px;">
+                                            </div>
+
+                                        </div>
+
+                                        <div id="editor" class="well" style="padding: 5px !important">
+                                            Go ahead..
+                                        </div>
+
+                                    </section>
+                                </div>
+                            </fieldset>
+                            <hr>
+                            <fieldset>
+                                <div class="row">
+
+                                    <section class="col col-md-9">
+                                        <div class="btn-toolbar edt-hidden" data-role="editor-toolbar" data-target="#editoroption5">
+
+
+                                            <div class="btn-group">
+                                                <a class="btn btn-primary" data-edit="bold" title="" data-original-title="Bold (Ctrl/Cmd+B)"><i class="glyphicon glyphicon-bold"></i></a>
+                                                <a class="btn btn-primary" data-edit="italic" title="" data-original-title="Italic (Ctrl/Cmd+I)"><i class="glyphicon glyphicon-italic"></i></a>
+                                                <a class="btn btn-primary" data-edit="underline" title="" data-original-title="Underline (Ctrl/Cmd+U)"><i class="glyphicon glyphicon-text-width"></i></a>
+                                            </div>
+
+                                            <div class="btn-group">
+                                                <a class="btn btn-primary dropdown-toggle" data-toggle="dropdown" title="" data-original-title="Hyperlink"><i class="glyphicon glyphicon-link"></i></a>
+                                                <div class="dropdown-menu input-append">
+                                                    <input class="span2" placeholder="URL" type="text" data-edit="createLink">
+                                                    <button class="btn" type="button">Add</button>
+                                                </div>
+                                                <a class="btn btn-primary" data-edit="unlink" title="" data-original-title="Remove Hyperlink"><i class="glyphicon glyphicon-remove"></i></a>
+
+                                            </div>
+
+                                            <div class="btn-group">
+                                                <a class="btn btn-primary" title="" id="pictureBtn" data-original-title="Insert picture (or just drag &amp; drop)"><i class="glyphicon glyphicon-picture"></i></a>
+                                                <input type="file" data-role="magic-overlay" data-target="#pictureBtn" data-edit="insertImage" style="opacity: 0; position: absolute; top: 0px; left: 0px; width: 37px; height: 30px;">
+                                            </div>
+
+                                        </div>
+
+                                        <div id="editoroption5" class="well " style="padding: 5px !important">
+                                            Go ahead..
+                                        </div>
+                                    </section>
+                                    <section class="col col-md-2" style="text-align: left; ">
+                                        <div class="padd-control" style="text-align: left !important; margin-top: 30px ">
+                                            <span><a href="javascript:void(0);" class="btn btn-success btn-circle add-option"><i class="glyphicon glyphicon-plus"></i></a></span>
+                                            <span><a href="javascript:void(0);" class="btn btn-danger btn-circle remove-option"><i class="glyphicon glyphicon-minus"></i></a></span>
+                                        </div>
+                                    </section>
+                                </div>
+                            </fieldset>
+                            <footer>
+                                <div class="row">
+
+
+
+                                    <section class="col col-md-2">
+                                        <a class="btn btn-success " href="javascript:void(0);"><i class="fa fa-check"></i> Save</a>
+                                    </section>
+                                </div>
+                            </footer>
                             </form>
                             </div>
                         </div>
@@ -542,20 +608,20 @@ Since the inception of the trend in the business world where IT (Information Tec
                                 Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft beer twee.
                             </p>
                         </div>
-                        <div class="tab-pane active" id="CC">
+                        <div class="tab-pane" id="CC">
                             <p>
                                 Trust fund seitan letterpress, keytar raw denim keffiyeh etsy art party before they sold out master cleanse gluten-free squid scenester freegan cosby sweater. Fanny pack portland seitan DIY, art party locavore wolf cliche high life echo park Austin. Cred vinyl keffiyeh DIY salvia PBR, banh mi before they sold out farm-to-table.
                             </p>
                         </div>
                     </div>
                     <ul class="nav nav-tabs">
-                        <li class="">
+                        <li class="active">
                             <a data-toggle="tab" href="#AA">Question</a>
                         </li>
                         <li class="">
                             <a data-toggle="tab" href="#BB">Settings</a>
                         </li>
-                        <li class="active">
+                        <li class="">
                             <a data-toggle="tab" href="#CC">Privacy</a>
                         </li>
                     </ul>
@@ -626,77 +692,116 @@ include ("inc/scripts.php");
     $.getScript('http://mindmup.github.io/bootstrap-wysiwyg/external/jquery.hotkeys.js',function(){
         $.getScript('http://mindmup.github.io/bootstrap-wysiwyg/bootstrap-wysiwyg.js',function(){
 
-            $('#editor').wysiwyg();
-            $('#editor').cleanHtml();
-            $('#editoroption2').wysiwyg();
-            $('#editoroption2').cleanHtml();
-            $('#editoroption3').wysiwyg();
-            $('#editoroption3').cleanHtml();
-            $('#editoroption4').wysiwyg();
-            $('#editoroption4').cleanHtml();
-            $('#editoroption5').wysiwyg();
-            $('#editoroption5').cleanHtml();
+            $("div[id^='editor']").wysiwyg();
+            $("div[id^='editor']").cleanHtml();
 
         });
     });
 
     $(document).ready(function() {
 
+        $(".tab-content").on("click","div[id^='editor']",function(){
 
-        $("div[id^='editor']").each(function(){
-            $(this).click(function(){
                 var thisEdtControl  = $(this).siblings("div.btn-toolbar")
                 var edtControls     = $("div.btn-toolbar");edtControls.addClass("edt-hidden").removeClass("edt-focused");thisEdtControl.addClass("edt-focused").removeClass("edt-hidden")
                 $(this).css("border","2px solid #3276b1 !important;")
-            })
+            //})
         })
 
-        $(".add-option").each(function(){
-            $(this).bind("click",function(){
-                var did = $(this).size + 1;
-                $(this).parents("div.row").eq(0).after(' <div class="row"><div class="col-md-1"><label class="radio"><input type="radio" name="rad-ans-opt" id="rad-ans-opt4"'+did+'><i></i>'+
-                '</label></div>'+
-                '<div class="col-md-9"><div class="btn-toolbar edt-hidden" data-role="editor-toolbar" data-target="#"'+did+'>'+
+        $(".tab-content").on("click",".add-option",function(e){
 
-                    '<div class="btn-group">'+
-                    '<a class="btn btn-primary" data-edit="bold" title="" data-original-title="Bold (Ctrl/Cmd+B)"><i class="glyphicon glyphicon-bold"></i></a>'+
-                '<a class="btn btn-primary" data-edit="italic" title="" data-original-title="Italic (Ctrl/Cmd+I)"><i class="glyphicon glyphicon-italic"></i></a>'+
-               '<a class="btn btn-primary" data-edit="underline" title="" data-original-title="Underline (Ctrl/Cmd+U)"><i class="glyphicon glyphicon-text-width"></i></a></div>'+
+                var did = $("div[id^='editor']").size() + 1;
+            //console.log()
+            var c = $(this).parents('div.anstypetemplate')
 
-                '<div class="btn-group">'+
-                    '<a class="btn btn-primary dropdown-toggle" data-toggle="dropdown" title="" data-original-title="Hyperlink"><i class="glyphicon glyphicon-link"></i></a>'+
-                '<div class="dropdown-menu input-append">'+
-                    '<input class="span2" placeholder="URL" type="text" data-edit="createLink">'+
-                    '<button class="btn" type="button">Add</button>'+
-                '</div>'+
-                '<a class="btn btn-primary" data-edit="unlink" title="" data-original-title="Remove Hyperlink"><i class="glyphicon glyphicon-remove"></i></a>'+
+            var rel = c.attr('question-type');
+            console.log(rel)
+            if(rel ==="multiple-choice"){
+                $(this).parents("div.row").eq(0).after('<div class="row">'+
+                '<section class="col col-md-1">'+
 
-                '</div>'+
+                    '<label class="radio">'+
+                    '<input type="radio" name="rad-ans-opt" id="rad-ans-opt">'+
+                    '<i></i>'+
+                    '</label>'+
+                '</section>'+
+                '<section class="col col-md-9">'+
+                    '<div class="btn-toolbar edt-hidden" data-role="editor-toolbar" data-target="#editor'+did+'">'+
 
-                '<div class="btn-group">'+
-                    '<a class="btn btn-primary" title="" id="pictureBtn" data-original-title="Insert picture (or just drag &amp; drop)"><i class="glyphicon glyphicon-picture"></i></a>'+
-                '<input type="file" data-role="magic-overlay" data-target="#pictureBtn" data-edit="insertImage" style="opacity: 0; position: absolute; top: 0px; left: 0px; width: 37px; height: 30px;">'+
-                   ' </div>'+
+                        '<div class="btn-group">'+
+                            '<a class="btn btn-primary" data-edit="bold" title="" data-original-title="Bold (Ctrl/Cmd+B)"><i class="glyphicon glyphicon-bold"></i></a>'+
+                            '<a class="btn btn-primary" data-edit="italic" title="" data-original-title="Italic (Ctrl/Cmd+I)"><i class="glyphicon glyphicon-italic"></i></a>'+
+                            '<a class="btn btn-primary" data-edit="underline" title="" data-original-title="Underline (Ctrl/Cmd+U)"><i class="glyphicon glyphicon-text-width"></i></a>'+
+                        '</div>'+
 
-                '</div>'+
+                        '<div class="btn-group">'+
+                            '<a class="btn btn-primary dropdown-toggle" data-toggle="dropdown" title="" data-original-title="Hyperlink"><i class="glyphicon glyphicon-link"></i></a>'+
+                            '<div class="dropdown-menu input-append">'+
+                                '<input class="span2" placeholder="URL" type="text" data-edit="createLink">'+
+                                '<button class="btn" type="button">Add</button>'+
+                            '</div>'+
+                            '<a class="btn btn-primary" data-edit="unlink" title="" data-original-title="Remove Hyperlink"><i class="glyphicon glyphicon-remove"></i></a>'+
+                        '</div>'+
 
-                '<div id="editoroption4"'+did+' class="well" style="padding: 5px !important">Go ahead..</div>'+
-                '</div>'+
-                '<div class="col-md-2" style="text-align: left; ">'+
+                        '<div class="btn-group">'+
+                            '<a class="btn btn-primary" title="" id="pictureBtn" data-original-title="Insert picture (or just drag &amp; drop)"><i class="glyphicon glyphicon-picture"></i></a>'+
+                            '<input type="file" data-role="magic-overlay" data-target="#pictureBtn" data-edit="insertImage" style="opacity: 0; position: absolute; top: 0px; left: 0px; width: 37px; height: 30px;">'+
+                            '</div>'+
+                    '</div>'+
+
+                    '<div id="editor'+did+'" class="well" style="padding: 5px !important" contenteditable="true">'+
+                        'Go ahead..'+
+                    '</div>'+
+                '</section>'+
+                '<section class="col col-md-2" style="text-align: left; ">'+
                     '<div class="padd-control" style="text-align: left !important; margin-top: 30px ">'+
-                    '<span><a href="javascript:void(0);" class="btn btn-success btn-circle add-option"><i class="glyphicon glyphicon-plus"></i></a></span>  '+
+                    '<span><a href="javascript:void(0);" class="btn btn-success btn-circle add-option"><i class="glyphicon glyphicon-plus"></i></a></span> '+
                     '<span><a href="javascript:void(0);" class="btn btn-danger btn-circle remove-option"><i class="glyphicon glyphicon-minus"></i></a></span>'+
-                '</div></div></div>')
-               console.log($(this).parents("div.row").eq(0))
-            })
+                '</div>'+
+                '</section>'+
+                '</div>')
+            }else if(rel ==="single-answer"){
+                $(this).parents("div.row").eq(0).after('<div class="row">'+
+                    '<section  class="col col-md-9">'+
+                        '<div class="btn-toolbar edt-hidden" data-role="editor-toolbar" data-target="#editor">'+
+                            '<div class="btn-group">'+
+                                '<a class="btn btn-primary" data-edit="bold" title="" data-original-title="Bold (Ctrl/Cmd+B)"><i class="glyphicon glyphicon-bold"></i></a>'+
+                                '<a class="btn btn-primary" data-edit="italic" title="" data-original-title="Italic (Ctrl/Cmd+I)"><i class="glyphicon glyphicon-italic"></i></a>'+
+                                '<a class="btn btn-primary" data-edit="underline" title="" data-original-title="Underline (Ctrl/Cmd+U)"><i class="glyphicon glyphicon-text-width"></i></a>'+
+                            '</div>'+
+                            '<div class="btn-group">'+
+                                '<a class="btn btn-primary dropdown-toggle" data-toggle="dropdown" title="" data-original-title="Hyperlink"><i class="glyphicon glyphicon-link"></i></a>'+
+                                '<div class="dropdown-menu input-append">'+
+                                    '<input class="span2" placeholder="URL" type="text" data-edit="createLink">'+
+                                    '<button class="btn" type="button">Add</button>'+
+                                '</div>'+
+                                '<a class="btn btn-primary" data-edit="unlink" title="" data-original-title="Remove Hyperlink"><i class="glyphicon glyphicon-remove"></i></a>'+
+                            '</div>'+
+                            '<div class="btn-group">'+
+                                '<a class="btn btn-primary" title="" id="pictureBtn" data-original-title="Insert picture (or just drag &amp; drop)"><i class="glyphicon glyphicon-picture"></i></a>'+
+                                '<input type="file" data-role="magic-overlay" data-target="#pictureBtn" data-edit="insertImage" style="opacity: 0; position: absolute; top: 0px; left: 0px; width: 37px; height: 30px;">'+
+                            '</div>'+
+                        '</div>'+
+                        '<div id="editor'+did+'" class="well" style="padding: 5px !important" contenteditable="true">'+
+                            'Go ahead..'+
+                        '</div>'+
+                    '</section>'+
+                    '<section class="col col-md-2" style="text-align: left; ">'+
+                    '<div class="padd-control" style="text-align: left !important; margin-top: 30px ">'+
+                    '<span><a href="javascript:void(0);" class="btn btn-success btn-circle add-option"><i class="glyphicon glyphicon-plus"></i></a></span> '+
+                    '<span><a href="javascript:void(0);" class="btn btn-danger btn-circle remove-option"><i class="glyphicon glyphicon-minus"></i></a></span>'+
+                    '</div>'+
+                    '</section>'+
+                    '</div>')
+
+            }
+            e.stopImmediatePropagation()
+
         })
 
 
-        $(".remove-option").each(function(){
-            $(this).bind("click",function(){
-                $(this).parents("div.row").eq(0).detach()
-
-            })
+        $(".tab-content").on("click",".remove-option", function(){
+            $(this).parents("div.row").eq(0).detach()
         })
 
         $("#draggable").draggable();
