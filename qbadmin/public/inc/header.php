@@ -79,7 +79,7 @@
 			}
 		</script>
 
-
+        <script src="<?php echo ASSETS_URL; ?>/js/plugin/mqbank/questiontemp.js"></script>
 	</head>
 	<body <?php echo implode(' ', array_map(function($prop, $value) {
 			return $prop.'="'.$value.'"';
