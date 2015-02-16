@@ -23,55 +23,137 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="add.blade.php" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="add.blade.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/qbadmin/app/views/question/add.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="381" column="76" selection-start="19848" selection-end="19848" vertical-scroll-proportion="-58.346153" vertical-offset="4960" max-vertical-offset="8670">
+            <state line="391" column="48" selection-start="17339" selection-end="17339" vertical-scroll-proportion="0.93227094" vertical-offset="6179" max-vertical-offset="9554">
               <folding>
-                <element signature="e#6341#6370#0" expanded="true" />
-                <marker date="1417545444298" expanded="false" signature="19405:19484" placeholder="..." />
-                <marker date="1417545444298" expanded="false" signature="19826:19844" placeholder="..." />
-                <marker date="1417545444298" expanded="false" signature="19903:19949" placeholder="..." />
-                <marker date="1417545444298" expanded="false" signature="22440:22519" placeholder="..." />
-                <marker date="1417545444298" expanded="false" signature="22884:22902" placeholder="..." />
-                <marker date="1417545444298" expanded="false" signature="22961:23007" placeholder="..." />
+                <element signature="e#4826#4855#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="demo.min.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/qbadmin/public/css/demo.min.css">
+      <file leaf-file-name="QuestionController.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/qbadmin/app/controllers/QuestionController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="65" selection-start="65" selection-end="65" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="102">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="357">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="session.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/config/session.php">
+      <file leaf-file-name="HomeController.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/qbadmin/app/controllers/HomeController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2482">
+            <state line="13" column="32" selection-start="486" selection-end="486" vertical-scroll-proportion="0.0" vertical-offset="221" max-vertical-offset="731">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="auth.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/config/auth.php">
+      <file leaf-file-name="Question.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/qbadmin/app/models/Question.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1309">
-              <folding />
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="272">
+              <folding>
+                <element signature="e#6#89#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="570a9057cf901158ca57264018b0f54e0c8068dd" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/storage/sessions/570a9057cf901158ca57264018b0f54e0c8068dd">
+      <file leaf-file-name="questiontemp.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/qbadmin/public/js/plugin/mqbank/questiontemp.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="0" selection-start="160" selection-end="160" vertical-scroll-proportion="0.0" vertical-offset="34" max-vertical-offset="136">
-              <folding />
+            <state line="894" column="99" selection-start="62908" selection-end="62913" vertical-scroll-proportion="-7.04" vertical-offset="15022" max-vertical-offset="25483">
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+                <marker date="1424107402951" expanded="true" signature="1310:1334" placeholder="..." />
+                <marker date="1424107402951" expanded="true" signature="3480:3559" placeholder="..." />
+                <marker date="1424107402951" expanded="true" signature="6021:6100" placeholder="..." />
+                <marker date="1424107402951" expanded="true" signature="6507:6525" placeholder="..." />
+                <marker date="1424107402951" expanded="true" signature="6588:6634" placeholder="..." />
+                <marker date="1424107402951" expanded="true" signature="7758:7782" placeholder="..." />
+                <marker date="1424107402951" expanded="true" signature="10575:10599" placeholder="..." />
+                <marker date="1424107402951" expanded="true" signature="14390:14414" placeholder="..." />
+                <marker date="1424107402951" expanded="true" signature="16468:16547" placeholder="..." />
+                <marker date="1424107402951" expanded="true" signature="18858:18937" placeholder="..." />
+                <marker date="1424107402951" expanded="true" signature="19316:19334" placeholder="..." />
+                <marker date="1424107402951" expanded="true" signature="19393:19439" placeholder="..." />
+                <marker date="1424107402951" expanded="true" signature="20483:20507" placeholder="..." />
+                <marker date="1424107402951" expanded="true" signature="23148:23172" placeholder="..." />
+                <marker date="1424107402951" expanded="true" signature="26622:26646" placeholder="..." />
+                <marker date="1424107402951" expanded="true" signature="26886:26910" placeholder="..." />
+                <marker date="1424107402951" expanded="true" signature="28872:28951" placeholder="..." />
+                <marker date="1424107402951" expanded="true" signature="31396:31475" placeholder="..." />
+                <marker date="1424107402951" expanded="true" signature="31826:31844" placeholder="..." />
+                <marker date="1424107402951" expanded="true" signature="31899:31945" placeholder="..." />
+                <marker date="1424107402951" expanded="true" signature="34386:34465" placeholder="..." />
+                <marker date="1424107402951" expanded="true" signature="34816:34834" placeholder="..." />
+                <marker date="1424107402951" expanded="true" signature="34889:34935" placeholder="..." />
+                <marker date="1424107402951" expanded="true" signature="37376:37455" placeholder="..." />
+                <marker date="1424107402951" expanded="true" signature="37807:37825" placeholder="..." />
+                <marker date="1424107402951" expanded="true" signature="37880:37926" placeholder="..." />
+                <marker date="1424107402951" expanded="true" signature="38532:38567" placeholder="..." />
+                <marker date="1424107402951" expanded="true" signature="40414:40493" placeholder="..." />
+                <marker date="1424107402951" expanded="true" signature="40845:40863" placeholder="..." />
+                <marker date="1424107402951" expanded="true" signature="40918:40964" placeholder="..." />
+                <marker date="1424107402951" expanded="true" signature="42412:42436" placeholder="..." />
+                <marker date="1424107402951" expanded="true" signature="44940:44964" placeholder="..." />
+                <marker date="1424107402951" expanded="true" signature="48173:48197" placeholder="..." />
+                <marker date="1424107402951" expanded="true" signature="48453:48477" placeholder="..." />
+                <marker date="1424107402951" expanded="true" signature="50531:50610" placeholder="..." />
+                <marker date="1424107402951" expanded="true" signature="53195:53274" placeholder="..." />
+                <marker date="1424107402951" expanded="true" signature="53653:53671" placeholder="..." />
+                <marker date="1424107402951" expanded="true" signature="53730:53776" placeholder="..." />
+                <marker date="1424107402951" expanded="true" signature="56337:56416" placeholder="..." />
+                <marker date="1424107402951" expanded="true" signature="56795:56813" placeholder="..." />
+                <marker date="1424107402951" expanded="true" signature="56872:56918" placeholder="..." />
+                <marker date="1424107402951" expanded="true" signature="59480:59559" placeholder="..." />
+                <marker date="1424107402951" expanded="true" signature="59939:59957" placeholder="..." />
+                <marker date="1424107402951" expanded="true" signature="60016:60062" placeholder="..." />
+                <marker date="1424107402951" expanded="true" signature="60704:60739" placeholder="..." />
+                <marker date="1424107402951" expanded="true" signature="62670:62749" placeholder="..." />
+                <marker date="1424107402951" expanded="true" signature="63129:63147" placeholder="..." />
+                <marker date="1424107402951" expanded="true" signature="63206:63252" placeholder="..." />
+                <marker date="1424107402951" expanded="true" signature="64808:64832" placeholder="..." />
+                <marker date="1424107402951" expanded="true" signature="66268:66282" placeholder="..." />
+                <marker date="1424107402951" expanded="true" signature="67291:67345" placeholder="..." />
+                <marker date="1424107402951" expanded="true" signature="67490:67504" placeholder="..." />
+                <marker date="1424107402951" expanded="true" signature="69024:69048" placeholder="..." />
+                <marker date="1424107402951" expanded="true" signature="72439:72463" placeholder="..." />
+                <marker date="1424107402951" expanded="true" signature="72702:72726" placeholder="..." />
+                <marker date="1424107402951" expanded="true" signature="74651:74730" placeholder="..." />
+                <marker date="1424107402951" expanded="true" signature="74845:74868" placeholder="..." />
+                <marker date="1424107402951" expanded="true" signature="77117:77196" placeholder="..." />
+                <marker date="1424107402951" expanded="true" signature="77526:77544" placeholder="..." />
+                <marker date="1424107402951" expanded="true" signature="77599:77645" placeholder="..." />
+                <marker date="1424107402951" expanded="true" signature="80044:80123" placeholder="..." />
+                <marker date="1424107402951" expanded="true" signature="80241:80264" placeholder="..." />
+                <marker date="1424107402951" expanded="true" signature="80409:80427" placeholder="..." />
+                <marker date="1424107402951" expanded="true" signature="80482:80528" placeholder="..." />
+                <marker date="1424107402951" expanded="true" signature="82928:83007" placeholder="..." />
+                <marker date="1424107402951" expanded="true" signature="83126:83149" placeholder="..." />
+                <marker date="1424107402951" expanded="true" signature="83294:83312" placeholder="..." />
+                <marker date="1424107402951" expanded="true" signature="83367:83413" placeholder="..." />
+                <marker date="1424107402951" expanded="true" signature="84019:84054" placeholder="..." />
+                <marker date="1424107402951" expanded="true" signature="85859:85938" placeholder="..." />
+                <marker date="1424107402951" expanded="true" signature="86057:86080" placeholder="..." />
+                <marker date="1424107402951" expanded="true" signature="86225:86243" placeholder="..." />
+                <marker date="1424107402951" expanded="true" signature="86298:86344" placeholder="..." />
+                <marker date="1424107402951" expanded="true" signature="87792:87816" placeholder="..." />
+                <marker date="1424107402951" expanded="true" signature="89184:89198" placeholder="..." />
+                <marker date="1424107402951" expanded="true" signature="90167:90221" placeholder="..." />
+                <marker date="1424107402951" expanded="true" signature="90358:90372" placeholder="..." />
+                <marker date="1424107402951" expanded="true" signature="91798:91822" placeholder="..." />
+                <marker date="1424107402951" expanded="true" signature="97505:97584" placeholder="..." />
+                <marker date="1424107402951" expanded="true" signature="97958:97976" placeholder="..." />
+                <marker date="1424107402951" expanded="true" signature="98035:98081" placeholder="..." />
+                <marker date="1424107402951" expanded="true" signature="100448:100527" placeholder="..." />
+                <marker date="1424107402951" expanded="true" signature="100907:100925" placeholder="..." />
+                <marker date="1424107402951" expanded="true" signature="100984:101030" placeholder="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -79,67 +161,44 @@
       <file leaf-file-name="scripts.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/qbadmin/public/inc/scripts.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="0" selection-start="1285" selection-end="1285" vertical-scroll-proportion="0.0" vertical-offset="869" max-vertical-offset="1462">
+            <state line="73" column="90" selection-start="3105" selection-end="3105" vertical-scroll-proportion="-14.384615" vertical-offset="867" max-vertical-offset="1530">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="questiontemp.js" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/qbadmin/public/js/plugin/mqbank/questiontemp.js">
+      <file leaf-file-name="header.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/qbadmin/public/inc/header.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="558" column="47" selection-start="58438" selection-end="58438" vertical-scroll-proportion="5.5102043" vertical-offset="6516" max-vertical-offset="10880">
-              <folding>
-                <marker date="1417511247433" expanded="false" signature="771:795" placeholder="..." />
-                <marker date="1417511247433" expanded="false" signature="3497:3576" placeholder="..." />
-                <marker date="1417511247433" expanded="false" signature="3811:3834" placeholder="..." />
-                <marker date="1417511247433" expanded="false" signature="6994:7073" placeholder="..." />
-                <marker date="1417511247433" expanded="false" signature="7352:7375" placeholder="..." />
-                <marker date="1417511247433" expanded="false" signature="7720:7738" placeholder="..." />
-                <marker date="1417511247433" expanded="false" signature="7845:7891" placeholder="..." />
-                <marker date="1417511247433" expanded="false" signature="12101:12125" placeholder="..." />
-                <marker date="1417511247433" expanded="false" signature="12469:12493" placeholder="..." />
-                <marker date="1417511247433" expanded="false" signature="15560:15639" placeholder="..." />
-                <marker date="1417511247433" expanded="false" signature="15922:15945" placeholder="..." />
-                <marker date="1417511247433" expanded="false" signature="20217:20296" placeholder="..." />
-                <marker date="1417511247433" expanded="false" signature="20634:20657" placeholder="..." />
-                <marker date="1417511247433" expanded="false" signature="21082:21100" placeholder="..." />
-                <marker date="1417511247433" expanded="false" signature="21227:21273" placeholder="..." />
-                <marker date="1417511247433" expanded="false" signature="26044:26123" placeholder="..." />
-                <marker date="1417511247433" expanded="false" signature="26497:26520" placeholder="..." />
-                <marker date="1417511247433" expanded="false" signature="26993:27011" placeholder="..." />
-                <marker date="1417511247433" expanded="false" signature="27150:27196" placeholder="..." />
-                <marker date="1417511247433" expanded="false" signature="32328:32407" placeholder="..." />
-                <marker date="1417511247433" expanded="false" signature="32818:32841" placeholder="..." />
-                <marker date="1417511247433" expanded="false" signature="33362:33380" placeholder="..." />
-                <marker date="1417511247433" expanded="false" signature="33531:33577" placeholder="..." />
-                <marker date="1417511247433" expanded="false" signature="35035:35070" placeholder="..." />
-                <marker date="1417511247433" expanded="false" signature="39113:39192" placeholder="..." />
-                <marker date="1417511247433" expanded="false" signature="39638:39661" placeholder="..." />
-                <marker date="1417511247433" expanded="false" signature="40230:40248" placeholder="..." />
-                <marker date="1417511247433" expanded="false" signature="40411:40457" placeholder="..." />
-                <marker date="1417511247433" expanded="false" signature="46828:46852" placeholder="..." />
-                <marker date="1417511247433" expanded="false" signature="47091:47115" placeholder="..." />
-                <marker date="1417511247433" expanded="false" signature="48990:49069" placeholder="..." />
-                <marker date="1417511247433" expanded="false" signature="49180:49203" placeholder="..." />
-                <marker date="1417511247433" expanded="false" signature="51408:51487" placeholder="..." />
-                <marker date="1417511247433" expanded="false" signature="51605:51628" placeholder="..." />
-                <marker date="1417511247433" expanded="false" signature="51773:51791" placeholder="..." />
-                <marker date="1417511247433" expanded="false" signature="51846:51892" placeholder="..." />
-                <marker date="1417511247433" expanded="false" signature="54291:54370" placeholder="..." />
-                <marker date="1417511247433" expanded="false" signature="54488:54511" placeholder="..." />
-                <marker date="1417511247433" expanded="false" signature="54656:54674" placeholder="..." />
-                <marker date="1417511247433" expanded="false" signature="54729:54775" placeholder="..." />
-                <marker date="1417511247433" expanded="false" signature="57175:57254" placeholder="..." />
-                <marker date="1417511247433" expanded="false" signature="57373:57396" placeholder="..." />
-                <marker date="1417511247433" expanded="false" signature="57541:57559" placeholder="..." />
-                <marker date="1417511247433" expanded="false" signature="57614:57660" placeholder="..." />
-                <marker date="1417511247433" expanded="false" signature="58266:58301" placeholder="..." />
-                <marker date="1417511247433" expanded="false" signature="60106:60185" placeholder="..." />
-                <marker date="1417511247433" expanded="false" signature="60304:60327" placeholder="..." />
-                <marker date="1417511247433" expanded="false" signature="60472:60490" placeholder="..." />
-                <marker date="1417511247433" expanded="false" signature="60545:60591" placeholder="..." />
-              </folding>
+            <state line="83" column="0" selection-start="4978" selection-end="4978" vertical-scroll-proportion="-3.2941177" vertical-offset="1243" max-vertical-offset="5899">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="demo.min.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/qbadmin/public/js/demo.min.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="2" column="51" selection-start="3348" selection-end="3348" vertical-scroll-proportion="0.0" vertical-offset="34" max-vertical-offset="136">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="app.config.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/qbadmin/public/js/app.config.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="17" column="31" selection-start="997" selection-end="1002" vertical-scroll-proportion="0.0" vertical-offset="108" max-vertical-offset="4777">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="app.min.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/qbadmin/public/js/app.min.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="18335" selection-start="18328" selection-end="18335" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="102">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -176,11 +235,14 @@
         <option value="$PROJECT_DIR$/qbadmin/public/css/smartadmin-production.min.css" />
         <option value="$PROJECT_DIR$/public/js/plugin/knob/jquery.knob.min.js" />
         <option value="$PROJECT_DIR$/public/js/plugin/mqbank/questiontemp.js" />
-        <option value="$PROJECT_DIR$/qbadmin/public/inc/scripts.php" />
-        <option value="$PROJECT_DIR$/qbadmin/public/inc/header.php" />
         <option value="$PROJECT_DIR$/qbadmin/public/inc/dddd.html" />
         <option value="$PROJECT_DIR$/app/storage/sessions/570a9057cf901158ca57264018b0f54e0c8068dd" />
         <option value="$PROJECT_DIR$/qbadmin/public/css/demo.min.css" />
+        <option value="$PROJECT_DIR$/qbadmin/public/css/selectize.bootstrap3.css" />
+        <option value="$PROJECT_DIR$/qbadmin/public/js/plugin/bootstrap-wysiwyg/bootstrap-wysiwyg.js" />
+        <option value="$PROJECT_DIR$/qbadmin/app/views/question/list.blade.php" />
+        <option value="$PROJECT_DIR$/qbadmin/public/inc/header.php" />
+        <option value="$PROJECT_DIR$/qbadmin/public/inc/scripts.php" />
         <option value="$PROJECT_DIR$/qbadmin/public/js/plugin/mqbank/questiontemp.js" />
         <option value="$PROJECT_DIR$/qbadmin/app/views/question/add.blade.php" />
       </list>
@@ -188,8 +250,10 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="width" value="1366" />
-    <option name="height" value="728" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1382" />
+    <option name="height" value="744" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -217,7 +281,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -236,19 +299,212 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="qbank" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="qbank" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="qbadmin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="qbank" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="qbank" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="qbadmin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="qbank" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="qbank" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="qbadmin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="qbank" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="qbank" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="qbadmin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="plugin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="qbank" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="qbank" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="qbadmin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="plugin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="selectize" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="qbank" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="qbank" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="qbadmin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="qbank" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="qbank" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="qbadmin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="qbank" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="qbank" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="qbadmin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="question" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="qbank" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="qbank" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ribs" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../PHP_HTML_Version2" />
     <property name="recentsLimit" value="5" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
     <property name="SearchEverywhereHistory" value="&quot;" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\wamp\www\qbank\qbadmin\public\js\plugin\selectize" />
+      <recent name="C:\wamp\www\qbank\qbadmin\public\css" />
       <recent name="C:\wamp\www\qbank\qbadmin\app\views\modules" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -293,7 +549,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1366" height="728" extended-state="1" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -301,7 +557,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.13379204" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18202417" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3284553" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -331,13 +587,13 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17220543" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
     </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
-    <option name="RECENTLY_FILTERED_USERS">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
       <collection />
     </option>
   </component>
@@ -353,96 +609,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/qbadmin/public/inc/footer.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="59" selection-start="151" selection-end="151" vertical-scroll-proportion="0.0" vertical-offset="68" max-vertical-offset="1003" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/qbadmin/public/inc/google-analytics.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="425" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/qbadmin/public/inc/init.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="204" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/qbadmin/public/lib/config.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="26" selection-start="1182" selection-end="1182" vertical-scroll-proportion="0.0" vertical-offset="578" max-vertical-offset="884" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/qbadmin/public/lib/func.global.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="102" max-vertical-offset="1003" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/qbadmin/public/lib/util.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="2" selection-start="250" selection-end="250" vertical-scroll-proportion="0.0" vertical-offset="119" max-vertical-offset="221" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/qbadmin/app/routes.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="22" selection-start="479" selection-end="479" vertical-scroll-proportion="0.0" vertical-offset="306" max-vertical-offset="425" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/qbadmin/app/controllers/HomeController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="44" selection-start="661" selection-end="661" vertical-scroll-proportion="0.0" vertical-offset="391" max-vertical-offset="561" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/qbadmin/public/inc/google-analytics.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="568" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/qbadmin/public/lib/util.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="2" selection-start="250" selection-end="250" vertical-scroll-proportion="0.2195572" vertical-offset="0" max-vertical-offset="542" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/qbadmin/public/lib/func.global.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.18819188" vertical-offset="102" max-vertical-offset="1003" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/qbadmin/public/lib/config.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="26" selection-start="1182" selection-end="1182" vertical-scroll-proportion="0.43542436" vertical-offset="342" max-vertical-offset="884" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/qbadmin/app/controllers/HomeController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="33" selection-start="858" selection-end="858" vertical-scroll-proportion="-20.923077" vertical-offset="0" max-vertical-offset="731" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/qbadmin/app/config/workbench.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="629" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/qbadmin/app/config/app.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="19" selection-start="441" selection-end="441" vertical-scroll-proportion="-9.807693" vertical-offset="0" max-vertical-offset="3400" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/qbadmin/app/routes.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="87" selection-start="915" selection-end="915" vertical-scroll-proportion="-8.5" vertical-offset="0" max-vertical-offset="323" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/qbadmin/app/views/role/list.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="120" column="11" selection-start="4219" selection-end="5042" vertical-scroll-proportion="-5.9615383" vertical-offset="1885" max-vertical-offset="12818" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/qbadmin/public/js/plugin/dropzone/dropzone.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="553" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/qbadmin/public/.htaccess">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="566" />
@@ -473,21 +639,6 @@
         <state line="5" column="4" selection-start="1373" selection-end="1373" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="187" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/qbadmin/public/js/app.config.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="31" selection-start="997" selection-end="1002" vertical-scroll-proportion="-7.24" vertical-offset="108" max-vertical-offset="4777" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/qbadmin/public/js/demo.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="51" selection-start="3348" selection-end="3348" vertical-scroll-proportion="0.06148282" vertical-offset="0" max-vertical-offset="553" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/qbadmin/public/js/app.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="18335" selection-start="18328" selection-end="18335" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="530" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/inc/scripts.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="27" column="0" selection-start="1328" selection-end="1328" vertical-scroll-proportion="0.0" vertical-offset="459" max-vertical-offset="1462" />
@@ -501,13 +652,6 @@
     <entry file="file://$PROJECT_DIR$/qbadmin/public/css/smartadmin-skins.min.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="19" selection-start="19" selection-end="19" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="612" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/qbadmin/public/css/smartadmin-production.min.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="124" selection-start="60046" selection-end="60046" vertical-scroll-proportion="0.0" vertical-offset="531" max-vertical-offset="1122">
-          <folding />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/js/plugin/knob/jquery.knob.min.js">
@@ -540,11 +684,6 @@
         <state line="23" column="18" selection-start="488" selection-end="488" vertical-scroll-proportion="0.0" vertical-offset="1397" max-vertical-offset="1921" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/qbadmin/public/inc/init.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="204" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/qbadmin/public/inc/ribbon.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="3" column="10" selection-start="40" selection-end="41" vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="629" />
@@ -553,18 +692,6 @@
     <entry file="file://$PROJECT_DIR$/qbadmin/public/inc/nav.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="8" column="39" selection-start="308" selection-end="314" vertical-scroll-proportion="0.0" vertical-offset="136" max-vertical-offset="1496" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/qbadmin/public/inc/header.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="81" column="90" selection-start="4708" selection-end="4708" vertical-scroll-proportion="-9.807693" vertical-offset="1122" max-vertical-offset="5865" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/storage/sessions/570a9057cf901158ca57264018b0f54e0c8068dd">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="0" selection-start="160" selection-end="160" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="136">
-          <folding />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Encryption/Encrypter.php">
@@ -577,109 +704,274 @@
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="555" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/qbadmin/public/inc/scripts.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="0" selection-start="1285" selection-end="1285" vertical-scroll-proportion="0.0" vertical-offset="869" max-vertical-offset="1462">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/qbadmin/public/inc/dddd.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="142" column="15" selection-start="8341" selection-end="8477" vertical-scroll-proportion="0.0" vertical-offset="2280" max-vertical-offset="12512">
-          <folding />
-        </state>
+        <state line="142" column="15" selection-start="8341" selection-end="8477" vertical-scroll-proportion="0.0" vertical-offset="2280" max-vertical-offset="12512" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/config/auth.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="716" max-vertical-offset="1309">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="716" max-vertical-offset="1309" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/config/session.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2482">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2482" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/storage/sessions/570a9057cf901158ca57264018b0f54e0c8068dd">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="0" selection-start="160" selection-end="160" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="136" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/qbadmin/public/css/smartadmin-production.min.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="53" column="34" selection-start="168090" selection-end="168090" vertical-scroll-proportion="0.69649804" vertical-offset="543" max-vertical-offset="1122" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/qbadmin/public/js/plugin/select2/select2.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="1775" selection-start="1774" selection-end="1775" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="514" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/qbadmin/public/js/plugin/select2/readme.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="573" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/lib/config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="884" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/app.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="539" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/app.config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-1.987013" vertical-offset="1071" max-vertical-offset="4777" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/qbadmin/public/css/demo.min.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="65" selection-start="65" selection-end="65" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="553">
+        <state line="0" column="65" selection-start="65" selection-end="65" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="553" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/qbadmin/public/css/selectize.bootstrap2.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="8381" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/qbadmin/public/css/selectize.bootstrap3.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="384" column="15" selection-start="10290" selection-end="10290" vertical-scroll-proportion="-9.04" vertical-offset="6302" max-vertical-offset="6936" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/qbadmin/public/js/plugin/selectize/selectize.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="560" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/qbadmin/public/css/selectize.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="5491" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/qbadmin/public/lib/config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="34" column="26" selection-start="1182" selection-end="1182" vertical-scroll-proportion="0.0" vertical-offset="311" max-vertical-offset="884" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/qbadmin/public/inc/init.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="204" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/qbadmin/public/js/plugin/selectize/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="45" selection-start="392" selection-end="398" vertical-scroll-proportion="0.27919707" vertical-offset="0" max-vertical-offset="935" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/qbadmin/public/js/plugin/bootstrap-wysiwyg/bootstrap-wysiwyg.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="24" selection-start="761" selection-end="761" vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="3502" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/qbadmin/app/views/role/add.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="550" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/qbadmin/app/views/role/list.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="647" column="15" selection-start="17080" selection-end="18663" vertical-scroll-proportion="0.0" vertical-offset="10999" max-vertical-offset="13226" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/qbadmin/app/views/question/list.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="672" column="33" selection-start="19047" selection-end="19047" vertical-scroll-proportion="0.0" vertical-offset="11169" max-vertical-offset="14943">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/qbadmin/app/views/question/add.blade.php">
+    <entry file="file://$PROJECT_DIR$/qbadmin/app/controllers/QuestionController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="381" column="76" selection-start="19848" selection-end="19848" vertical-scroll-proportion="-58.346153" vertical-offset="4960" max-vertical-offset="8670">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="550">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/qbadmin/app/controllers/HomeController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="32" selection-start="486" selection-end="486" vertical-scroll-proportion="0.0" vertical-offset="221" max-vertical-offset="731">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/qbadmin/public/js/demo.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="51" selection-start="3348" selection-end="3348" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="136">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/qbadmin/public/js/app.config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="31" selection-start="997" selection-end="1002" vertical-scroll-proportion="0.0" vertical-offset="108" max-vertical-offset="4777">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/qbadmin/public/js/app.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="18335" selection-start="18328" selection-end="18335" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="102">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/qbadmin/public/inc/header.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="83" column="0" selection-start="4978" selection-end="4978" vertical-scroll-proportion="-3.2941177" vertical-offset="1243" max-vertical-offset="5899">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/qbadmin/public/inc/scripts.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="73" column="90" selection-start="3105" selection-end="3105" vertical-scroll-proportion="-14.384615" vertical-offset="867" max-vertical-offset="1530">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/qbadmin/app/models/Question.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="550">
           <folding>
-            <element signature="e#6341#6370#0" expanded="true" />
-            <marker date="1417545444298" expanded="false" signature="19405:19484" placeholder="..." />
-            <marker date="1417545444298" expanded="false" signature="19826:19844" placeholder="..." />
-            <marker date="1417545444298" expanded="false" signature="19903:19949" placeholder="..." />
-            <marker date="1417545444298" expanded="false" signature="22440:22519" placeholder="..." />
-            <marker date="1417545444298" expanded="false" signature="22884:22902" placeholder="..." />
-            <marker date="1417545444298" expanded="false" signature="22961:23007" placeholder="..." />
+            <element signature="e#6#89#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/qbadmin/public/js/plugin/mqbank/questiontemp.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="558" column="47" selection-start="58438" selection-end="58438" vertical-scroll-proportion="5.5102043" vertical-offset="6516" max-vertical-offset="10880">
+        <state line="894" column="99" selection-start="62908" selection-end="62913" vertical-scroll-proportion="-7.04" vertical-offset="15022" max-vertical-offset="25483">
           <folding>
-            <marker date="1417511247433" expanded="false" signature="771:795" placeholder="..." />
-            <marker date="1417511247433" expanded="false" signature="3497:3576" placeholder="..." />
-            <marker date="1417511247433" expanded="false" signature="3811:3834" placeholder="..." />
-            <marker date="1417511247433" expanded="false" signature="6994:7073" placeholder="..." />
-            <marker date="1417511247433" expanded="false" signature="7352:7375" placeholder="..." />
-            <marker date="1417511247433" expanded="false" signature="7720:7738" placeholder="..." />
-            <marker date="1417511247433" expanded="false" signature="7845:7891" placeholder="..." />
-            <marker date="1417511247433" expanded="false" signature="12101:12125" placeholder="..." />
-            <marker date="1417511247433" expanded="false" signature="12469:12493" placeholder="..." />
-            <marker date="1417511247433" expanded="false" signature="15560:15639" placeholder="..." />
-            <marker date="1417511247433" expanded="false" signature="15922:15945" placeholder="..." />
-            <marker date="1417511247433" expanded="false" signature="20217:20296" placeholder="..." />
-            <marker date="1417511247433" expanded="false" signature="20634:20657" placeholder="..." />
-            <marker date="1417511247433" expanded="false" signature="21082:21100" placeholder="..." />
-            <marker date="1417511247433" expanded="false" signature="21227:21273" placeholder="..." />
-            <marker date="1417511247433" expanded="false" signature="26044:26123" placeholder="..." />
-            <marker date="1417511247433" expanded="false" signature="26497:26520" placeholder="..." />
-            <marker date="1417511247433" expanded="false" signature="26993:27011" placeholder="..." />
-            <marker date="1417511247433" expanded="false" signature="27150:27196" placeholder="..." />
-            <marker date="1417511247433" expanded="false" signature="32328:32407" placeholder="..." />
-            <marker date="1417511247433" expanded="false" signature="32818:32841" placeholder="..." />
-            <marker date="1417511247433" expanded="false" signature="33362:33380" placeholder="..." />
-            <marker date="1417511247433" expanded="false" signature="33531:33577" placeholder="..." />
-            <marker date="1417511247433" expanded="false" signature="35035:35070" placeholder="..." />
-            <marker date="1417511247433" expanded="false" signature="39113:39192" placeholder="..." />
-            <marker date="1417511247433" expanded="false" signature="39638:39661" placeholder="..." />
-            <marker date="1417511247433" expanded="false" signature="40230:40248" placeholder="..." />
-            <marker date="1417511247433" expanded="false" signature="40411:40457" placeholder="..." />
-            <marker date="1417511247433" expanded="false" signature="46828:46852" placeholder="..." />
-            <marker date="1417511247433" expanded="false" signature="47091:47115" placeholder="..." />
-            <marker date="1417511247433" expanded="false" signature="48990:49069" placeholder="..." />
-            <marker date="1417511247433" expanded="false" signature="49180:49203" placeholder="..." />
-            <marker date="1417511247433" expanded="false" signature="51408:51487" placeholder="..." />
-            <marker date="1417511247433" expanded="false" signature="51605:51628" placeholder="..." />
-            <marker date="1417511247433" expanded="false" signature="51773:51791" placeholder="..." />
-            <marker date="1417511247433" expanded="false" signature="51846:51892" placeholder="..." />
-            <marker date="1417511247433" expanded="false" signature="54291:54370" placeholder="..." />
-            <marker date="1417511247433" expanded="false" signature="54488:54511" placeholder="..." />
-            <marker date="1417511247433" expanded="false" signature="54656:54674" placeholder="..." />
-            <marker date="1417511247433" expanded="false" signature="54729:54775" placeholder="..." />
-            <marker date="1417511247433" expanded="false" signature="57175:57254" placeholder="..." />
-            <marker date="1417511247433" expanded="false" signature="57373:57396" placeholder="..." />
-            <marker date="1417511247433" expanded="false" signature="57541:57559" placeholder="..." />
-            <marker date="1417511247433" expanded="false" signature="57614:57660" placeholder="..." />
-            <marker date="1417511247433" expanded="false" signature="58266:58301" placeholder="..." />
-            <marker date="1417511247433" expanded="false" signature="60106:60185" placeholder="..." />
-            <marker date="1417511247433" expanded="false" signature="60304:60327" placeholder="..." />
-            <marker date="1417511247433" expanded="false" signature="60472:60490" placeholder="..." />
-            <marker date="1417511247433" expanded="false" signature="60545:60591" placeholder="..." />
+            <element signature="n#!!doc" expanded="true" />
+            <marker date="1424107402951" expanded="true" signature="1310:1334" placeholder="..." />
+            <marker date="1424107402951" expanded="true" signature="3480:3559" placeholder="..." />
+            <marker date="1424107402951" expanded="true" signature="6021:6100" placeholder="..." />
+            <marker date="1424107402951" expanded="true" signature="6507:6525" placeholder="..." />
+            <marker date="1424107402951" expanded="true" signature="6588:6634" placeholder="..." />
+            <marker date="1424107402951" expanded="true" signature="7758:7782" placeholder="..." />
+            <marker date="1424107402951" expanded="true" signature="10575:10599" placeholder="..." />
+            <marker date="1424107402951" expanded="true" signature="14390:14414" placeholder="..." />
+            <marker date="1424107402951" expanded="true" signature="16468:16547" placeholder="..." />
+            <marker date="1424107402951" expanded="true" signature="18858:18937" placeholder="..." />
+            <marker date="1424107402951" expanded="true" signature="19316:19334" placeholder="..." />
+            <marker date="1424107402951" expanded="true" signature="19393:19439" placeholder="..." />
+            <marker date="1424107402951" expanded="true" signature="20483:20507" placeholder="..." />
+            <marker date="1424107402951" expanded="true" signature="23148:23172" placeholder="..." />
+            <marker date="1424107402951" expanded="true" signature="26622:26646" placeholder="..." />
+            <marker date="1424107402951" expanded="true" signature="26886:26910" placeholder="..." />
+            <marker date="1424107402951" expanded="true" signature="28872:28951" placeholder="..." />
+            <marker date="1424107402951" expanded="true" signature="31396:31475" placeholder="..." />
+            <marker date="1424107402951" expanded="true" signature="31826:31844" placeholder="..." />
+            <marker date="1424107402951" expanded="true" signature="31899:31945" placeholder="..." />
+            <marker date="1424107402951" expanded="true" signature="34386:34465" placeholder="..." />
+            <marker date="1424107402951" expanded="true" signature="34816:34834" placeholder="..." />
+            <marker date="1424107402951" expanded="true" signature="34889:34935" placeholder="..." />
+            <marker date="1424107402951" expanded="true" signature="37376:37455" placeholder="..." />
+            <marker date="1424107402951" expanded="true" signature="37807:37825" placeholder="..." />
+            <marker date="1424107402951" expanded="true" signature="37880:37926" placeholder="..." />
+            <marker date="1424107402951" expanded="true" signature="38532:38567" placeholder="..." />
+            <marker date="1424107402951" expanded="true" signature="40414:40493" placeholder="..." />
+            <marker date="1424107402951" expanded="true" signature="40845:40863" placeholder="..." />
+            <marker date="1424107402951" expanded="true" signature="40918:40964" placeholder="..." />
+            <marker date="1424107402951" expanded="true" signature="42412:42436" placeholder="..." />
+            <marker date="1424107402951" expanded="true" signature="44940:44964" placeholder="..." />
+            <marker date="1424107402951" expanded="true" signature="48173:48197" placeholder="..." />
+            <marker date="1424107402951" expanded="true" signature="48453:48477" placeholder="..." />
+            <marker date="1424107402951" expanded="true" signature="50531:50610" placeholder="..." />
+            <marker date="1424107402951" expanded="true" signature="53195:53274" placeholder="..." />
+            <marker date="1424107402951" expanded="true" signature="53653:53671" placeholder="..." />
+            <marker date="1424107402951" expanded="true" signature="53730:53776" placeholder="..." />
+            <marker date="1424107402951" expanded="true" signature="56337:56416" placeholder="..." />
+            <marker date="1424107402951" expanded="true" signature="56795:56813" placeholder="..." />
+            <marker date="1424107402951" expanded="true" signature="56872:56918" placeholder="..." />
+            <marker date="1424107402951" expanded="true" signature="59480:59559" placeholder="..." />
+            <marker date="1424107402951" expanded="true" signature="59939:59957" placeholder="..." />
+            <marker date="1424107402951" expanded="true" signature="60016:60062" placeholder="..." />
+            <marker date="1424107402951" expanded="true" signature="60704:60739" placeholder="..." />
+            <marker date="1424107402951" expanded="true" signature="62670:62749" placeholder="..." />
+            <marker date="1424107402951" expanded="true" signature="63129:63147" placeholder="..." />
+            <marker date="1424107402951" expanded="true" signature="63206:63252" placeholder="..." />
+            <marker date="1424107402951" expanded="true" signature="64808:64832" placeholder="..." />
+            <marker date="1424107402951" expanded="true" signature="66268:66282" placeholder="..." />
+            <marker date="1424107402951" expanded="true" signature="67291:67345" placeholder="..." />
+            <marker date="1424107402951" expanded="true" signature="67490:67504" placeholder="..." />
+            <marker date="1424107402951" expanded="true" signature="69024:69048" placeholder="..." />
+            <marker date="1424107402951" expanded="true" signature="72439:72463" placeholder="..." />
+            <marker date="1424107402951" expanded="true" signature="72702:72726" placeholder="..." />
+            <marker date="1424107402951" expanded="true" signature="74651:74730" placeholder="..." />
+            <marker date="1424107402951" expanded="true" signature="74845:74868" placeholder="..." />
+            <marker date="1424107402951" expanded="true" signature="77117:77196" placeholder="..." />
+            <marker date="1424107402951" expanded="true" signature="77526:77544" placeholder="..." />
+            <marker date="1424107402951" expanded="true" signature="77599:77645" placeholder="..." />
+            <marker date="1424107402951" expanded="true" signature="80044:80123" placeholder="..." />
+            <marker date="1424107402951" expanded="true" signature="80241:80264" placeholder="..." />
+            <marker date="1424107402951" expanded="true" signature="80409:80427" placeholder="..." />
+            <marker date="1424107402951" expanded="true" signature="80482:80528" placeholder="..." />
+            <marker date="1424107402951" expanded="true" signature="82928:83007" placeholder="..." />
+            <marker date="1424107402951" expanded="true" signature="83126:83149" placeholder="..." />
+            <marker date="1424107402951" expanded="true" signature="83294:83312" placeholder="..." />
+            <marker date="1424107402951" expanded="true" signature="83367:83413" placeholder="..." />
+            <marker date="1424107402951" expanded="true" signature="84019:84054" placeholder="..." />
+            <marker date="1424107402951" expanded="true" signature="85859:85938" placeholder="..." />
+            <marker date="1424107402951" expanded="true" signature="86057:86080" placeholder="..." />
+            <marker date="1424107402951" expanded="true" signature="86225:86243" placeholder="..." />
+            <marker date="1424107402951" expanded="true" signature="86298:86344" placeholder="..." />
+            <marker date="1424107402951" expanded="true" signature="87792:87816" placeholder="..." />
+            <marker date="1424107402951" expanded="true" signature="89184:89198" placeholder="..." />
+            <marker date="1424107402951" expanded="true" signature="90167:90221" placeholder="..." />
+            <marker date="1424107402951" expanded="true" signature="90358:90372" placeholder="..." />
+            <marker date="1424107402951" expanded="true" signature="91798:91822" placeholder="..." />
+            <marker date="1424107402951" expanded="true" signature="97505:97584" placeholder="..." />
+            <marker date="1424107402951" expanded="true" signature="97958:97976" placeholder="..." />
+            <marker date="1424107402951" expanded="true" signature="98035:98081" placeholder="..." />
+            <marker date="1424107402951" expanded="true" signature="100448:100527" placeholder="..." />
+            <marker date="1424107402951" expanded="true" signature="100907:100925" placeholder="..." />
+            <marker date="1424107402951" expanded="true" signature="100984:101030" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/qbadmin/app/views/question/add.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="391" column="48" selection-start="17339" selection-end="17339" vertical-scroll-proportion="0.93227094" vertical-offset="6179" max-vertical-offset="9554">
+          <folding>
+            <element signature="e#4826#4855#0" expanded="true" />
           </folding>
         </state>
       </provider>

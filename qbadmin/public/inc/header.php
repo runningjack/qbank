@@ -36,8 +36,10 @@
 			}
 		?>
 
-
-		<!-- Demo purpose only: goes with demo.js, you can delete this css when designing your own WebApp -->
+        <link rel="stylesheet" type="text/css" media="screen" href="<?php echo ASSETS_URL; ?>/css/selectize.css">
+        <link rel="stylesheet" type="text/css" media="screen" href="<?php echo ASSETS_URL; ?>/css/selectize.default.css">
+        <!--<link rel="stylesheet" type="text/css" media="screen" href="<?php echo ASSETS_URL; ?>/css/selectize.bootstrap3.css">
+		 Demo purpose only: goes with demo.js, you can delete this css when designing your own WebApp -->
 		<link rel="stylesheet" type="text/css" media="screen" href="<?php echo ASSETS_URL; ?>/css/demo.min.css">
 
 		<!-- FAVICONS -->
@@ -79,7 +81,7 @@
 			}
 		</script>
 
-        <script src="<?php echo ASSETS_URL; ?>/js/plugin/mqbank/questiontemp.js"></script>
+
 	</head>
 	<body <?php echo implode(' ', array_map(function($prop, $value) {
 			return $prop.'="'.$value.'"';

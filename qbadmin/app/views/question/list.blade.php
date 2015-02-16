@@ -815,8 +815,6 @@ include ("inc/scripts.php");
                 phone : 480
             };
 
-
-
             /* END BASIC */
 
             /* COLUMN FILTER  */

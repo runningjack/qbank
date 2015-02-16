@@ -9,7 +9,7 @@
         width: 550px !important;
     }
 
-    #editor {min-height:80px;}
+    #editor {min-height:50px;}
     [id ^='option'] {min-height : 30px;  margin-bottom: 10px !important }
     .radio input:checked+i,.checkbox input:checked+i, .toggle input:checked+i{border-color:#3b9ff3}
     .radio{
@@ -36,6 +36,25 @@
 
     .edt-hidden{
         visibility: hidden;
+    }
+
+    .answertypetemplte{
+        background-color: #fff;
+    }
+    .mydiv{
+        background-color: #fffacd;
+        border-radius: 10px;
+        border: 2px dashed #c3c3c3;
+        padding:1px;
+        margin-top: 2px;
+
+    }
+    .smart-form{
+        background-color: #fff;
+    }
+    .smart-form > fieldset:first-child{
+        margin-top:0;
+        padding-top: 0 !important;
     }
 
 
@@ -89,7 +108,7 @@ include("inc/ribbon.php");
 <!-- MAIN CONTENT -->
 <div id="content">
 
-<div class="row">
+<div class="row" id="menuc">
     <div class="col-xs-12 col-sm-7 col-md-7 col-lg-4">
         <h1 class="page-title txt-color-blueDark">
             <i class="fa fa-table fa-fw "></i>
@@ -124,34 +143,12 @@ include("inc/ribbon.php");
 </div>
 
 <!-- widget grid -->
-<!--<section id="widget-grid" class="">-->
+<section id="widget-grid" class="">
 
 <!-- row -->
+
 <div class="row">
-    <section class="col col-md-9">
-        <div class="btn-toolbar edt-hidden" data-role="editor-toolbar" data-target="#editoroption5">
-            <div class="btn-group">
-                <a class="btn btn-primary" data-edit="bold" title="" data-original-title="Bold (Ctrl/Cmd+B)"><i class="glyphicon glyphicon-bold"></i></a>
-                <a class="btn btn-primary" data-edit="italic" title="" data-original-title="Italic (Ctrl/Cmd+I)"><i class="glyphicon glyphicon-italic"></i></a>
-                <a class="btn btn-primary" data-edit="underline" title="" data-original-title="Underline (Ctrl/Cmd+U)"><i class="glyphicon glyphicon-text-width"></i></a>
-                </div>
-            <div class="btn-group">
-                <a class="btn btn-primary dropdown-toggle" data-toggle="dropdown" title="" data-original-title="Hyperlink"><i class="glyphicon glyphicon-link"></i></a>
-                <div class="dropdown-menu input-append">
-                    <input class="span2" placeholder="URL" type="text" data-edit="createLink">
-                     <button class="btn" type="button">Add</button>
-                    </div>
-                <a class="btn btn-primary" data-edit="unlink" title="" data-original-title="Remove Hyperlink"><i class="glyphicon glyphicon-remove"></i></a>
-                </div>
-            <div class="btn-group">
-                <a class="btn btn-primary" title="" id="pictureBtn" data-original-title="Insert picture (or just drag &amp; drop)"><i class="glyphicon glyphicon-picture"></i></a>
-                <input type="file" data-role="magic-overlay" data-target="#pictureBtn" data-edit="insertImage" style="opacity: 0; position: absolute; top: 0px; left: 0px; width: 37px; height: 30px;">
-                </div>
-            </div>
-        <div id="editoroption5" class="well " style="padding: 5px !important">
-            Go ahead..
-            </div>
-        </section>
+
 
 <article class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
     <div class="jarviswidget jarviswidget-color-blueDark" id="wid-id-1" data-widget-editbutton="false">
@@ -174,8 +171,12 @@ include("inc/ribbon.php");
                                     <option value="2">Single Question Multiple Choice</option>
                                     <option value="3">Sectional Question</option>
 
-                                </select> <i></i> </label>
+                                </select> <i></i> </label><!--<div class="form-group"><input type="text" class="form-control tagsinput" data-role="tagsinput"></div>-->
                         </section>
+                        <div class="form-group">
+                            <label>Type and enter to add tag</label>
+                            <input type="text"  class="stag" value="science,biology,chemistry,physics" >
+                    </div>
                     </div>
 
                 </div>
@@ -236,17 +237,6 @@ include("inc/ribbon.php");
 </article>
 
 
-
-   <!-- <article class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-        <div id="draggable">
-            <h3>Drag Me Here</h3>
-        </div>
-
-        <div id="droppable">
-            <h3>Drag Me Here</h3>
-        </div>
-    </article>-->
-
 </div>
 
 </section>
@@ -273,6 +263,13 @@ include ("inc/scripts.php");
 <script src="<?php echo ASSETS_URL; ?>/js/plugin/markdown/markdown.min.js"></script>
 <script src="<?php echo ASSETS_URL; ?>/js/plugin/markdown/to-markdown.min.js"></script>
 <script src="<?php echo ASSETS_URL; ?>/js/plugin/markdown/bootstrap-markdown.min.js"></script>-->
+<script src="<?php echo ASSETS_URL; ?>/js/plugin/bootstrap-wysiwyg/jquery.hotkeys.js"></script>
+<script src="<?php echo ASSETS_URL; ?>/js/plugin/bootstrap-wysiwyg/bootstrap-wysiwyg.js"></script>
+<script src="<?php echo ASSETS_URL; ?>/js/plugin/ckeditor/ckeditor.js"></script>
+
+<script src="<?php echo ASSETS_URL; ?>/js/plugin/bootstrap-tags/bootstrap-tagsinput.min.js"></script>
+<script src="<?php echo ASSETS_URL; ?>/js/plugin/selectize/selectize.min.js"></script>
+
 
 
 <script type="text/javascript">
@@ -280,11 +277,8 @@ include ("inc/scripts.php");
     $(function () { $("[data-toggle='tooltip']").tooltip(); });
     $(function () { $(".popover-options a").popover({html : true });});
     $("[rel=tooltip]").tooltip({html:true});
-
-
-
-    $.getScript('http://mindmup.github.io/bootstrap-wysiwyg/external/jquery.hotkeys.js',function(){
-        $.getScript('http://mindmup.github.io/bootstrap-wysiwyg/bootstrap-wysiwyg.js',function(){
+    $.getScript('<?php echo ASSETS_URL; ?>/js/plugin/bootstrap-wysiwyg/jquery.hotkeys.js',function(){
+        $.getScript('<?php echo ASSETS_URL; ?>/js/plugin/bootstrap-wysiwyg/bootstrap-wysiwyg.js',function(){
 
             $("div[id^='editor']").wysiwyg();
             $("div[id^='editor']").cleanHtml();
@@ -292,213 +286,271 @@ include ("inc/scripts.php");
         });
     });
 
-    $(document).ready(function() {
-        CKEDITOR.replace( 'ckeditor', { height: '380px', startupFocus : true} );
-        /*$('.summernote').summernote({
-            height : 180,
-            focus : false,
-            tabsize : 2
-        });*/
-        $("div#arena, div#arena2").on("click","div[id^='editor']",function(){
 
+
+
+    $(document).ready(function() {
+        var hoverdiv ="";
+        CKEDITOR.replace( 'ckeditor', { height: '380px', startupFocus : true} );
+
+        $("div#arena, div#arena2").on("click","div[id^='editor']",function(){
                 var thisEdtControl  = $(this).siblings("div.btn-toolbar")
                 var edtControls     = $("div.btn-toolbar");edtControls.addClass("edt-hidden").removeClass("edt-focused");thisEdtControl.addClass("edt-focused").removeClass("edt-hidden")
                 $(this).css("border","2px solid #3276b1 !important;")
+            $(this).selectize({
+                plugins: ['remove_button'],
+                delimiter: ',',
+                persist: false,
+                create: function(input) {
+                    return {
+                        value: input,
+                        text: input
+                    }
+                }
+            });
+
             //})
         })
+        /*
+        * Selectize functionality
+        * allow user to add tags
+        * to search question
+
+         **/
+
+        $("#arena, div#arena2").on("mouseenter",".stag",function(e){
+
+
+        })
+
+        /*
+        * This allows user to select a question type
+        * an a template is loaded on selecting
+        * question category
+        * */
 
         $("#seltor").on("change",function(){
+
+
             if($("#seltor").val()==1){
                 $("div#arena").removeClass("edt-hidden").addClass("edt-focused")
                 $("div#arena2").removeClass("edt-focused").addClass("edt-hidden");
-                $("div#arena").html($.templateQB.singleTemp())
+                //if(undef)
+               // var q = $("header h1:contains(Question)").size()+1
+                $("div#arena").qbankTemp({
+                    qid :1,
+                    temp:"Subjective",
+                    action:"insert",
+                    pqid:"",
+                    parentCont:"",
+                    qtype:"",
+                    qoptId :""
+                });
+
             }else if($("#seltor").val()==2){
-               $("div#arena").removeClass("edt-hidden").addClass("edt-focused")
+                $("div#arena").removeClass("edt-hidden").addClass("edt-focused")
                 $("div#arena2").removeClass("edt-focused").addClass("edt-hidden");
-                $("div#arena").html($.templateQB.multipleTemp())
+                $("div#arena2 .optionarena").html("")
+                $("div#arena").qbankTemp({
+                    qid :"",
+                    temp:"Multiple Choice",
+                    action:"insert",
+                    pqid:"",
+                    parentCont:"",
+                    qtype:"",
+                    qoptId :""
+                });
+
             }else if($("#seltor").val()==3){
                if( $("div#arena").hasClass("edt-focused")){
                     $("div#arena").removeClass("edt-focused");
                     $("div#arena").addClass("edt-hidden");$("div#arena").html("");}
                 $("div#arena2").removeClass("edt-hidden").addClass("edt-focused");
+                var q = $("header h1:contains(Question)").size()+1
 
-               $("div#arena2 .optionarena").html($.templateQB.sectionTemp())
+               $("div#arena2 .optionarena").qbankTemp({
+                   qid :q,
+                   temp:"Section",
+                   action:"insert",
+                   pqid:"",
+                   parentCont:"",
+                   qtype:"",
+                   qoptId :""
+               });
             }
 
+            $("div[id^='editor']").wysiwyg();
+            $("div[id^='editor']").cleanHtml();
+
+
+        })
+
+        /*
+        * Adding new child template in section type
+        * of question
+        * */
+        $("div[id^='sectionBB']").on("mouseenter",".stag",function(){
+            $(this).selectize({
+                plugins: ['remove_button'],
+                delimiter: ',',
+                persist: false,
+                create: function(input) {
+                    return {
+                        value: input,
+                        text: input
+                    }
+                }
+            });
         })
 
         $("div#arena2").on("click","#multichoice",function(e){
-            $("div#arena2 .optionarena").append($.templateQB.sectionTemp())
-        })
-        $("div#arena2").on("click","#singlechoice",function(e){
-            $("div#arena2 .optionarena").append($.templateQB.singleTemp())
-        })
-
-        $("#arena, div#arena2").on("click",".add-option",function(e){
-
-                var did = $("div[id^='editor']").size() + 1;
-            //console.log()
-            var c = $(this).parents('div.anstypetemplate')
-
-            var rel = c.attr('question-type');
-            console.log(rel)
-            if(rel ==="multiple-choice"){
-                $(this).parents("div.row").eq(0).after('<div class="row">'+
-                '<section class="col col-md-1">'+
-
-                    '<label class="radio">'+
-                    '<input type="radio" name="rad-ans-opt" id="rad-ans-opt">'+
-                    '<i></i>'+
-                    '</label>'+
-                '</section>'+
-                '<section class="col col-md-9">'+
-                    '<div class="btn-toolbar edt-hidden" data-role="editor-toolbar" data-target="#editor'+did+'">'+
-
-                        '<div class="btn-group">'+
-                            '<a class="btn btn-primary" data-edit="bold" title="" data-original-title="Bold (Ctrl/Cmd+B)"><i class="glyphicon glyphicon-bold"></i></a>'+
-                            '<a class="btn btn-primary" data-edit="italic" title="" data-original-title="Italic (Ctrl/Cmd+I)"><i class="glyphicon glyphicon-italic"></i></a>'+
-                            '<a class="btn btn-primary" data-edit="underline" title="" data-original-title="Underline (Ctrl/Cmd+U)"><i class="glyphicon glyphicon-text-width"></i></a>'+
-                        '</div>'+
-
-                        '<div class="btn-group">'+
-                            '<a class="btn btn-primary dropdown-toggle" data-toggle="dropdown" title="" data-original-title="Hyperlink"><i class="glyphicon glyphicon-link"></i></a>'+
-                            '<div class="dropdown-menu input-append">'+
-                                '<input class="span2" placeholder="URL" type="text" data-edit="createLink">'+
-                                '<button class="btn" type="button">Add</button>'+
-                            '</div>'+
-                            '<a class="btn btn-primary" data-edit="unlink" title="" data-original-title="Remove Hyperlink"><i class="glyphicon glyphicon-remove"></i></a>'+
-                        '</div>'+
-
-                        '<div class="btn-group">'+
-                            '<a class="btn btn-primary" title="" id="pictureBtn" data-original-title="Insert picture (or just drag &amp; drop)"><i class="glyphicon glyphicon-picture"></i></a>'+
-                            '<input type="file" data-role="magic-overlay" data-target="#pictureBtn" data-edit="insertImage" style="opacity: 0; position: absolute; top: 0px; left: 0px; width: 37px; height: 30px;">'+
-                            '</div>'+
-                    '</div>'+
-
-                    '<div id="editor'+did+'" class="well" style="padding: 5px !important" contenteditable="true">'+
-                        'Go ahead..'+
-                    '</div>'+
-                '</section>'+
-                '<section class="col col-md-2" style="text-align: left; ">'+
-                    '<div class="padd-control" style="text-align: left !important; margin-top: 30px ">'+
-                    '<span><a href="javascript:void(0);" class="btn btn-success btn-circle add-option"><i class="glyphicon glyphicon-plus"></i></a></span> '+
-                    '<span><a href="javascript:void(0);" class="btn btn-danger btn-circle remove-option"><i class="glyphicon glyphicon-minus"></i></a></span>'+
-                '</div>'+
-                '</section>'+
-                '</div>')
-            }else if(rel ==="single-answer"){
-                $(this).parents("div.row").eq(0).after('<div class="row">'+
-                    '<section  class="col col-md-9">'+
-                        '<div class="btn-toolbar edt-hidden" data-role="editor-toolbar" data-target="#editor">'+
-                            '<div class="btn-group">'+
-                                '<a class="btn btn-primary" data-edit="bold" title="" data-original-title="Bold (Ctrl/Cmd+B)"><i class="glyphicon glyphicon-bold"></i></a>'+
-                                '<a class="btn btn-primary" data-edit="italic" title="" data-original-title="Italic (Ctrl/Cmd+I)"><i class="glyphicon glyphicon-italic"></i></a>'+
-                                '<a class="btn btn-primary" data-edit="underline" title="" data-original-title="Underline (Ctrl/Cmd+U)"><i class="glyphicon glyphicon-text-width"></i></a>'+
-                            '</div>'+
-                            '<div class="btn-group">'+
-                                '<a class="btn btn-primary dropdown-toggle" data-toggle="dropdown" title="" data-original-title="Hyperlink"><i class="glyphicon glyphicon-link"></i></a>'+
-                                '<div class="dropdown-menu input-append">'+
-                                    '<input class="span2" placeholder="URL" type="text" data-edit="createLink">'+
-                                    '<button class="btn" type="button">Add</button>'+
-                                '</div>'+
-                                '<a class="btn btn-primary" data-edit="unlink" title="" data-original-title="Remove Hyperlink"><i class="glyphicon glyphicon-remove"></i></a>'+
-                            '</div>'+
-                            '<div class="btn-group">'+
-                                '<a class="btn btn-primary" title="" id="pictureBtn" data-original-title="Insert picture (or just drag &amp; drop)"><i class="glyphicon glyphicon-picture"></i></a>'+
-                                '<input type="file" data-role="magic-overlay" data-target="#pictureBtn" data-edit="insertImage" style="opacity: 0; position: absolute; top: 0px; left: 0px; width: 37px; height: 30px;">'+
-                            '</div>'+
-                        '</div>'+
-                        '<div id="editor'+did+'" class="well" style="padding: 5px !important" contenteditable="true">'+
-                            'Go ahead..'+
-                        '</div>'+
-                    '</section>'+
-                    '<section class="col col-md-2" style="text-align: left; ">'+
-                    '<div class="padd-control" style="text-align: left !important; margin-top: 30px ">'+
-                    '<span><a href="javascript:void(0);" class="btn btn-success btn-circle add-option"><i class="glyphicon glyphicon-plus"></i></a></span> '+
-                    '<span><a href="javascript:void(0);" class="btn btn-danger btn-circle remove-option"><i class="glyphicon glyphicon-minus"></i></a></span>'+
-                    '</div>'+
-                    '</section>'+
-                    '</div>')
-
-            }//else if()
-            e.stopImmediatePropagation()
-
-        })
-
-        //alert($.templateQB.singleqb());
-
-
-        $("#arena, div#arena2").on("click",".remove-option", function(){
-            $(this).parents("div.row").eq(0).detach()
-        })
-
-        $("#draggable").draggable();
-              
-            $("#droppable").droppable({
-                drop: function() {
-                    $("#draggable").text("Dropped")
-                }
+            var q = $("header h1:contains(Question)").size()
+            var nq = q+1;
+            $("div#arena2 .optionarena").qbankTemp({
+                qid :nq,
+                temp:"Multiple Choice",
+                action:"append",
+                pqid:"",
+                parentCont:"",
+                qtype:"",
+                qoptId :""
             });
+        })
 
-        $.widget("ui.dialog", $.extend({}, $.ui.dialog.prototype, {
-            _title : function(title) {
-                if (!this.options.title) {
-                    title.html("&#160;");
-                } else {
-                    title.html(this.options.title);
+        $("div#arena2").on("click","#singlechoice",function(e){
+            var q = $("header h1:contains(Question)").size()
+            var nq = q+1;
+            $("div#arena2 .optionarena").qbankTemp({
+                qid :nq,
+                temp:"Subjective",
+                action:"append",
+                pqid:"",
+                parentCont:"",
+                qtype:"",
+                qoptId :""
+            });
+        })
+
+
+        /*
+        * This section is used to add
+        * hover effect on multiple
+        * question on a paper or on sectional question
+        * */
+
+        $("div#arena2").on("mouseenter",".tab-main",function(e){
+
+            $(this).each(function(e){
+                //console.log($(this))
+                hoverdiv = $("<div class='mydiv' ></div>")
+                              if($(this).parents(".mydiv")>1){$(this).unwrap(hoverdiv)}
+               // console.log(hoverdiv)
+                $(this).wrap(hoverdiv)
+                $(this).prepend("<a href='javascript:void(0);' class='btn btn-danger section-remove'>Remove</a>")
+            })
+
+        }).on("mouseleave",".tab-main",function(e){
+             $(this).each(function(e){
+                 //console.log($(this))
+
+                 $("a.section-remove").each(function(){
+                     $(this).remove();
+                 })
+                 //$(this).siblings("a").remove()
+                 $(this).unwrap("<div class='mydiv'></div>")
+
+             })
+
+         })
+
+        /*
+        * this section is used to add
+        * more input
+        * */
+        $("#arena, div#arena2").on("click",".add-option",function(e){
+            var c = $(this).parents('div.anstypetemplate')
+            var oids = c.children($("div[id^='editoroption']")).size()
+            var q = $("header h1:contains(Question)").size()
+            var qid = c.find($("span.qnum")).text()
+            console.log(qid);
+                var did = $("div[id^='editor']").size() + 1;
+                var rel = c.attr('question-type');
+                $(this).qbankTempFunction({qid :"",
+                    qid :q,
+                    temp:"",
+                    pqid:"",
+                    parentCont:c,
+                    qtype:rel,
+                    qoptId :oids,
+                    removeOption :function(){}
+                })
+                e.stopImmediatePropagation()
+        })
+
+
+
+        /*
+        * This section is used to remove a question
+        * block
+        * */
+
+        $("div#arena, div#arena2").on("click",".section-remove",function(e){
+            $(this).parents("div.mydiv").detach()
+            var c = $(this).parents('div.anstypetemplate'),did = $("div[id^='editor']").size() + 1,q = $("header h1:contains(Question)").size()+ 1,x = 0
+            /*
+            * Renumbers the question after a section have been deleted
+            * */
+            $("header h1:contains(Question) span.qnum").each(function(){
+                x=x+1;
+                $(this).html(x);
+            })
+
+            e.preventDefault()
+        })
+
+        /*
+        * This section is used to remove
+        * option input row form the listing of
+        * options
+        * */
+        $("#arena, div#arena2").on("click",".remove-option", function(e){
+           var s =($("div.mydiv").size())
+
+
+
+            if($("#seltor").val() == 3){ // if the template is used for section category
+                //we want to do away with the
+                //section remove button
+                //$(this).parent("li:fir").unwrap("<div class='mydiv'></div>");
+                $("a.section-remove").each(function(){
+                    $(this).remove();
+                })
+                if($("div.mydiv").size() > 1){
+                    $(this).parents("div.tab-main").unwrap("<div class='mydiv'></div>").eq(0)
                 }
+
+
+
+            // alert($("div.tab-main").size());
+                $(this).parents("div.row").eq(0).detach()
+            }else{
+                $(this).parents("div.row").eq(0).detach()
             }
-        }));
-        $('#dialog_link').click(function() {
-            $('#dialog_simple').dialog('open');
-            return false;
 
-        });
-        $('#dialog_simple').dialog({
-            autoOpen : false,
-            width : 600,
-            resizable : false,
-            modal : true,
-            title : "<div class='widget-header'><h4><i class='fa fa-warning'></i> Add New Module</h4></div>",
-            buttons : [{
-                html : "<i class='fa fa-save'></i>&nbsp; Save",
-                "class" : "btn btn-success",
-                click : function() {
-                    var request =  $.ajax({
-                        url:"passwordchange",
-                        type:"post",
-                        data:{uid:$("#uid").val(),oldpass:$("#oldpassword").val(),newpass:$("#password").val(),repass:$("#repassword").val()},
-                        dataType:"html"
-                    })
+            /*
+            * ensure that the wrapped div does not replicate
+            * */
 
-                    request.done(function(data){
-                        $("#msg").html(data)
-                    })
+            e.stopImmediatePropagation()
+            e.preventDefault();
+        })
 
-                    request.fail(function(){
-                        alert("Request failed: ")
-                    })
-
-                    //$(this).dialog("close");
-                }
-            }, {
-                html : "<i class='fa fa-times'></i>&nbsp; Cancel",
-                "class" : "btn btn-default",
-                click : function() {
-                    $(this).dialog("close");
-                }
-            }]
-        });
     })
 
 </script>
 <!-- PAGE RELATED PLUGIN(S) -->
-<script src="<?php echo ASSETS_URL; ?>/js/plugin/datatables/jquery.dataTables.min.js"></script>
-<script src="<?php echo ASSETS_URL; ?>/js/plugin/datatables/dataTables.colVis.min.js"></script>
-<script src="<?php echo ASSETS_URL; ?>/js/plugin/datatables/dataTables.tableTools.min.js"></script>
-<script src="<?php echo ASSETS_URL; ?>/js/plugin/datatables/dataTables.bootstrap.min.js"></script>
-<script src="<?php echo ASSETS_URL; ?>/js/plugin/datatable-responsive/datatables.responsive.min.js"></script>
-<script src="<?php echo ASSETS_URL; ?>/js/plugin/ckeditor/ckeditor.js"></script>
+
+
 <?php
 //include footer
 include ("inc/google-analytics.php");
