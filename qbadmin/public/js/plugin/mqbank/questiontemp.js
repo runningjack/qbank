@@ -126,10 +126,17 @@
                         '<div class="row"> <section class="col col-md-12">' +
                         '<div class="col col-md-4">Add Search  Tags</div>' +
                         '<div class="col col-md-5">	' +
-                            '<label class="input">'+
-                            '<input type="text"  class="tagsinput stag" value="science,biology,chemistry,physics" >'+
+                        '<label class="input">'+
+                        '<input type="text"  class="stag" value="science,biology,chemistry,physics" onclick=" $.getScript(\''+
+                        '/public/js/plugin/selectize/selectize.min.js\''+
+                        ',function(){});$(this).selectize({plugins: [\''+
+                        'remove_button'+
+                        '\'],delimiter:'+
+                        '\',\',persist: false,create: function(input) {return {value: input,text: input}}})'+
+                        '"  >'+
 
-                        '</label>'+
+
+                        '</label></div>' +
                         '<div class="col col-md-3">	' +
                         '</div>' +
                         '</section></div>' +
@@ -308,10 +315,18 @@
                     '<div class="row"> <section class="col col-md-12">' +
                     '<div class="col col-md-4">Add Search  Tags</div>' +
                     '<div class="col col-md-5">	' +
-                        '<label class="input">'+
-                        '<input type="text"  class="tagsinput stag" value="science,biology,chemistry,physics" >'+
+                    '<label class="input">'+
+                    '<input type="text"  class="stag" value="science,biology,chemistry,physics" onclick=" $.getScript(\''+
+                    '/public/js/plugin/selectize/selectize.min.js\''+
+                    ',function(){});$(this).selectize({plugins: [\''+
+                    'remove_button'+
+                    '\'],delimiter:'+
+                    '\',\',persist: false,create: function(input) {return {value: input,text: input}}})'+
+                    '"  >'+
+
 
                     '</label>' +
+                    '</div>'+
                     '<div class="col col-md-3">	' +
                     '</div>' +
                     '</section></div>' +
@@ -624,13 +639,20 @@
                 '</section>'+
                 '</div>' +
                 '<div class="row"> <section class="col col-md-12">' +
-                '<div class="col col-md-4">Add Search  Tags</div>' +
+                '<div class="col col-md-4">Add Search Tags</div>' +
                 '<div class="col col-md-5">	' +
-                    '<label class="input">'+
-                    '<input type="text"  class=" stag" value="science,biology,chemistry,physics" >'+
-                
+                '<label class="input">'+
+                '<input type="text"  class="stag" value="science,biology,chemistry,physics" onclick=" $.getScript(\''+
+                '/public/js/plugin/selectize/selectize.min.js\''+
+                ',function(){});$(this).selectize({plugins: [\''+
+                'remove_button'+
+                '\'],delimiter:'+
+                '\',\',persist: false,create: function(input) {return {value: input,text: input}}})'+
+                '"  >'+
+
 
                 '</label>' +
+                '</div>'+
                 '<div class="col col-md-3">	' +
                 '</div>' +
                 '</section></div>' +
@@ -941,25 +963,17 @@
                     '<div class="row"> <section class="col col-md-12">' +
                     '<div class="col col-md-4">Add Search  Tags</div>' +
                     '<div class="col col-md-5">	' +
-                        '<div class="sandbox">'+
-                        '<input type="text"  class="selectized stag" value="science,biology,chemistry,physics" tabindex="-1" style="display: none;">'+
-                        '<div class="selectize-control demo-default multi plugin-remove_button">' +
-                        '<div class="selectize-input items not-full has-options has-items">' +
-                        '<div data-value="science" class="item">science<a href="javascript:void(0)" class="remove" tabindex="-1" title="Remove">×</a>' +
-                        '</div>' +
-                        '<div data-value="biology" class="item">biology<a href="javascript:void(0)" class="remove" tabindex="-1" title="Remove">×</a>' +
-                        '</div>' +
-                        '<div data-value="chemistry" class="item">chemistry<a href="javascript:void(0)" class="remove" tabindex="-1" title="Remove">×</a>' +
-                        '</div>' +
-                        '<div data-value="physics" class="item">physics<a href="javascript:void(0)" class="remove" tabindex="-1" title="Remove">×</a>' +
-                        '</div><input type="text" autocomplete="off" tabindex="" style="width: 4px; opacity: 1; position: relative; left: 0px;">' +
-                        '</div>' +
-                        '<div class="selectize-dropdown multi demo-default plugin-remove_button" style="display: none;">' +
-                        '<div class="selectize-dropdown-content"></div>' +
-                        '</div>' +
-                        '</div>' +
-                        '<div class="value">Current Value: <span>"science,biology,chemistry,physics"</span></div>'+
-                        '</div>'+
+                    '<label class="input">'+
+                    '<input type="text"  class="stag" value="science,biology,chemistry,physics" onclick=" $.getScript(\''+
+                    '/public/js/plugin/selectize/selectize.min.js\''+
+                    ',function(){});$(this).selectize({plugins: [\''+
+                    'remove_button'+
+                    '\'],delimiter:'+
+                    '\',\',persist: false,create: function(input) {return {value: input,text: input}}})'+
+                    '"  >'+
+
+
+                    '</label>' +
                     '</div>' +
                     '<div class="col col-md-3">	' +
                     '</div>' +
@@ -1274,25 +1288,17 @@
                 '<div class="row"> <section class="col col-md-12">' +
                 '<div class="col col-md-4">Add Search  Tags</div>' +
                 '<div class="col col-md-5">	' +
-                    '<div class="sandbox">'+
-                    '<input type="text"  class="selectized stag" value="science,biology,chemistry,physics" tabindex="-1" style="display: none;">'+
-                    '<div class="selectize-control demo-default multi plugin-remove_button">' +
-                    '<div class="selectize-input items not-full has-options has-items">' +
-                    '<div data-value="science" class="item">science<a href="javascript:void(0)" class="remove" tabindex="-1" title="Remove">×</a>' +
-                    '</div>' +
-                    '<div data-value="biology" class="item">biology<a href="javascript:void(0)" class="remove" tabindex="-1" title="Remove">×</a>' +
-                    '</div>' +
-                    '<div data-value="chemistry" class="item">chemistry<a href="javascript:void(0)" class="remove" tabindex="-1" title="Remove">×</a>' +
-                    '</div>' +
-                    '<div data-value="physics" class="item">physics<a href="javascript:void(0)" class="remove" tabindex="-1" title="Remove">×</a>' +
-                    '</div><input type="text" autocomplete="off" tabindex="" style="width: 4px; opacity: 1; position: relative; left: 0px;">' +
-                    '</div>' +
-                    '<div class="selectize-dropdown multi demo-default plugin-remove_button" style="display: none;">' +
-                    '<div class="selectize-dropdown-content"></div>' +
-                    '</div>' +
-                    '</div>' +
-                    '<div class="value">Current Value: <span>"science,biology,chemistry,physics"</span></div>'+
-                    '</div>'+
+                '<label class="input">'+
+                '<input type="text"  class="stag" value="science,biology,chemistry,physics" onclick=" $.getScript(\''+
+                '/public/js/plugin/selectize/selectize.min.js\''+
+                ',function(){});$(this).selectize({plugins: [\''+
+                'remove_button'+
+                '\'],delimiter:'+
+                '\',\',persist: false,create: function(input) {return {value: input,text: input}}})'+
+                '"  >'+
+
+
+                '</label>' +
                 '</div>' +
                 '<div class="col col-md-3">	' +
                 '</div>' +

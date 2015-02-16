@@ -175,7 +175,7 @@ include("inc/ribbon.php");
                         </section>
                         <div class="form-group">
                             <label>Type and enter to add tag</label>
-                            <input type="text"  class="stag" value="science,biology,chemistry,physics" >
+
                     </div>
                     </div>
 
@@ -236,7 +236,7 @@ include("inc/ribbon.php");
     </div>
 </article>
 
-
+    <div id="sectionBB23">uyyu</div>
 </div>
 
 </section>
@@ -316,13 +316,13 @@ include ("inc/scripts.php");
         * allow user to add tags
         * to search question
 
-         **/
+
 
         $("#arena, div#arena2").on("mouseenter",".stag",function(e){
 
 
         })
-
+            **/
         /*
         * This allows user to select a question type
         * an a template is loaded on selecting
@@ -389,7 +389,12 @@ include ("inc/scripts.php");
         * Adding new child template in section type
         * of question
         * */
-        $("div[id^='sectionBB']").on("mouseenter",".stag",function(){
+        $("div[id^='sectionBB']").on("click",".stag",function(){
+console.log($(this));
+            $.getScript('<?php echo ASSETS_URL; ?>/js/plugin/selectize/selectize.min.js',function(){
+
+            });
+
             $(this).selectize({
                 plugins: ['remove_button'],
                 delimiter: ',',
