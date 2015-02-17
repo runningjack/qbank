@@ -27,7 +27,7 @@
                         '   <div class="tabbable tabs-below">' +
                         '       <div class="tab-content padding-10">' +
                         '           <div class="tab-pane active" id="multipleAA'+this.config.qid+'_'+this.config.stmp+'">' +
-                        '<div class="anstypetemplate" question-type="single-answer">'+
+                        '<div class="anstypetemplate" question-type="single-answer" id="'+this.config.qid+'_'+this.config.stmp+'">'+
                         '<form class="smart-form" style="border:1px solid #c3c3c3">'+
                         '<header>'+
                         '<h1>Question <span class="qnum">'+this.config.qid+'</span></h1>'+
@@ -54,7 +54,12 @@
                         '<input type="file" data-role="magic-overlay" data-target="#pictureBtn" data-edit="insertImage" style="opacity: 0; position: absolute; top: 0px; left: 0px; width: 37px; height: 30px;">'+
                         '</div>'+
                         '</div>'+
-                        '<div id="editor_'+this.config.qid+'_'+this.config.stmp+'" class="well" style="padding: 5px !important" contenteditable="true">'+
+                        '<div id="editor_'+this.config.qid+'_'+this.config.stmp+'" class="well" style="padding: 5px !important" contenteditable="true" onclick="$.getScript(\'http://localhost/qbank/qbadmin/public/js/plugin/bootstrap-wysiwyg/jquery.hotkeys.js\',function(){'+
+                        '$.getScript(\'http://localhost/qbank/qbadmin/public/js/plugin/bootstrap-wysiwyg/bootstrap-wysiwyg.js\',function(){'+
+                        '$(\'#editor_'+this.config.qid+'_'+this.config.stmp+'\').wysiwyg();'+
+                        '$(\'#editor_'+this.config.qid+'_'+this.config.stmp+'\').cleanHtml();'+
+                        '});'+
+                        '});">'+
                         'Go ahead..'+
                         '</div>'+
                         '</section>'+
@@ -64,7 +69,7 @@
                         '<fieldset>'+
                         '<div class="row" id="names">'+
                         '<section class="col col-md-9">'+
-                        '<div class="btn-toolbar edt-hidden" data-role="editor-toolbar" data-target="#editoroption5_'+this.config.qid+'_'+this.config.stmp+'">'+
+                        '<div class="btn-toolbar edt-hidden" data-role="editor-toolbar" data-target="#editoroption_1_'+this.config.qid+'_'+this.config.stmp+'">'+
                         '<div class="btn-group">'+
                         '<a class="btn btn-primary" data-edit="bold" title="" data-original-title="Bold (Ctrl/Cmd+B)"><i class="glyphicon glyphicon-bold"></i></a>'+
                         '<a class="btn btn-primary" data-edit="italic" title="" data-original-title="Italic (Ctrl/Cmd+I)"><i class="glyphicon glyphicon-italic"></i></a>'+
@@ -86,7 +91,12 @@
                         '<input type="file" data-role="magic-overlay" data-target="#pictureBtn" data-edit="insertImage" style="opacity: 0; position: absolute; top: 0px; left: 0px; width: 37px; height: 30px;">'+
                         '</div>'+
                         '</div>'+
-                        '<div id="editoroption5_'+this.config.qid+'_'+this.config.stmp+'" class="well " style="padding: 5px !important" contenteditable="true">'+
+                        '<div id="editoroption_1_'+this.config.qid+'_'+this.config.stmp+'" class="well" style="padding: 5px !important" contenteditable="true" onclick="$.getScript(\'http://localhost/qbank/qbadmin/public/js/plugin/bootstrap-wysiwyg/jquery.hotkeys.js\',function(){'+
+                        '$.getScript(\'http://localhost/qbank/qbadmin/public/js/plugin/bootstrap-wysiwyg/bootstrap-wysiwyg.js\',function(){'+
+                        '$(\'#editoroption_1_'+this.config.qid+'_'+this.config.stmp+'\').wysiwyg();'+
+                        '$(\'#editoroption_1_'+this.config.qid+'_'+this.config.stmp+'\').cleanHtml();'+
+                        '});'+
+                        '});">'+
                         'Go ahead..'+
                         '</div>'+
                         '</section>'+
@@ -128,14 +138,12 @@
                         '<div class="col col-md-5">	' +
                         '<label class="input">'+
                         '<input type="text"  class="stag" value="science,biology,chemistry,physics" onclick=" $.getScript(\''+
-                        '/public/js/plugin/selectize/selectize.min.js\''+
+                        'http://localhost/qbank/qbadmin/public/js/plugin/selectize/selectize.min.js\''+
                         ',function(){});$(this).selectize({plugins: [\''+
                         'remove_button'+
                         '\'],delimiter:'+
                         '\',\',persist: false,create: function(input) {return {value: input,text: input}}})'+
                         '"  >'+
-
-
                         '</label></div>' +
                         '<div class="col col-md-3">	' +
                         '</div>' +
@@ -216,7 +224,7 @@
                     '   <div class="tabbable tabs-below">' +
                     '       <div class="tab-content padding-10">' +
                     '           <div class="tab-pane active" id="multipleAA'+this.config.qid+'_'+this.config.stmp+'">' +
-                    '<div class="anstypetemplate" question-type="single-answer">'+
+                    '<div class="anstypetemplate" question-type="single-answer" id="'+this.config.qid+'_'+this.config.stmp+'">'+
                     '<form class="smart-form" style="border:1px solid #c3c3c3">'+
                     '<header>'+
                     '<h1>Question <span class="qnum">'+this.config.qid+'</span></h1>'+
@@ -243,7 +251,12 @@
                     '<input type="file" data-role="magic-overlay" data-target="#pictureBtn" data-edit="insertImage" style="opacity: 0; position: absolute; top: 0px; left: 0px; width: 37px; height: 30px;">'+
                     '</div>'+
                     '</div>'+
-                    '<div id="editor_'+this.config.qid+'_'+this.config.stmp+'" class="well" style="padding: 5px !important" contenteditable="true">'+
+                    '<div id="editor_'+this.config.qid+'_'+this.config.stmp+'" class="well" style="padding: 5px !important" contenteditable="true" onclick="$.getScript(\'http://localhost/qbank/qbadmin/public/js/plugin/bootstrap-wysiwyg/jquery.hotkeys.js\',function(){'+
+                    '$.getScript(\'http://localhost/qbank/qbadmin/public/js/plugin/bootstrap-wysiwyg/bootstrap-wysiwyg.js\',function(){'+
+                    '$(\'#editor_'+this.config.qid+'_'+this.config.stmp+'\').wysiwyg();'+
+                    '$(\'#editor_'+this.config.qid+'_'+this.config.stmp+'\').cleanHtml();'+
+                    '});'+
+                    '});">'+
                     'Go ahead..'+
                     '</div>'+
                     '</section>'+
@@ -253,7 +266,7 @@
                     '<fieldset>'+
                     '<div class="row">'+
                     '<section class="col col-md-9">'+
-                    '<div class="btn-toolbar edt-hidden" data-role="editor-toolbar" data-target="#editoroption5_'+this.config.qid+'_'+this.config.stmp+'">'+
+                    '<div class="btn-toolbar edt-hidden" data-role="editor-toolbar" data-target="#editoroption_1_'+this.config.qid+'_'+this.config.stmp+'">'+
                     '<div class="btn-group">'+
                     '<a class="btn btn-primary" data-edit="bold" title="" data-original-title="Bold (Ctrl/Cmd+B)"><i class="glyphicon glyphicon-bold"></i></a>'+
                     '<a class="btn btn-primary" data-edit="italic" title="" data-original-title="Italic (Ctrl/Cmd+I)"><i class="glyphicon glyphicon-italic"></i></a>'+
@@ -275,7 +288,12 @@
                     '<input type="file" data-role="magic-overlay" data-target="#pictureBtn" data-edit="insertImage" style="opacity: 0; position: absolute; top: 0px; left: 0px; width: 37px; height: 30px;">'+
                     '</div>'+
                     '</div>'+
-                    '<div id="editoroption5_'+this.config.qid+'_'+this.config.stmp+'" class="well " style="padding: 5px !important" contenteditable="true">'+
+                    '<div id="editoroption_1_'+this.config.qid+'_'+this.config.stmp+'" class="well" style="padding: 5px !important" contenteditable="true" onclick="$.getScript(\'http://localhost/qbank/qbadmin/public/js/plugin/bootstrap-wysiwyg/jquery.hotkeys.js\',function(){'+
+                    '$.getScript(\'http://localhost/qbank/qbadmin/public/js/plugin/bootstrap-wysiwyg/bootstrap-wysiwyg.js\',function(){'+
+                    '$(\'#editoroption_1_'+this.config.qid+'_'+this.config.stmp+'\').wysiwyg();'+
+                    '$(\'#editoroption_1_'+this.config.qid+'_'+this.config.stmp+'\').cleanHtml();'+
+                    '});'+
+                    '});">'+
                     'Go ahead..'+
                     '</div>'+
                     '</section>'+
@@ -415,7 +433,7 @@
                 '<div class="row">'+
 
                 '<section class="col col-md-12">'+
-                '<div class="multiple-choice anstypetemplate" question-type="multiple-choice">'+
+                '<div class="multiple-choice anstypetemplate" question-type="multiple-choice" id="'+this.config.qid+'_'+this.config.stmp+'">'+
                 '<form class="smart-form" style="border:1px solid #c3c3c3">'+
                 '<header>'+
                 '<h1>Question <span class="qnum">'+this.config.qid+'</span></h1>'+
@@ -442,7 +460,12 @@
                 '<input type="file" data-role="magic-overlay" data-target="#pictureBtn" data-edit="insertImage" style="opacity: 0; position: absolute; top: 0px; left: 0px; width: 37px; height: 30px;">'+
                 '</div>'+
                 '</div>'+
-                '<div id="editor_'+this.config.qid+'_'+this.config.stmp+'" class="well" style="padding: 5px !important" contenteditable="true">'+
+                '<div id="editor_'+this.config.qid+'_'+this.config.stmp+'" class="well" style="padding: 5px !important" contenteditable="true" onclick="$.getScript(\'http://localhost/qbank/qbadmin/public/js/plugin/bootstrap-wysiwyg/jquery.hotkeys.js\',function(){'+
+                '$.getScript(\'http://localhost/qbank/qbadmin/public/js/plugin/bootstrap-wysiwyg/bootstrap-wysiwyg.js\',function(){'+
+                '$(\'#editor_'+this.config.qid+'_'+this.config.stmp+'\').wysiwyg();'+
+                '$(\'#editor_'+this.config.qid+'_'+this.config.stmp+'\').cleanHtml();'+
+                '});'+
+                '});">'+
                 'Go ahead..'+
                 '</div>'+
                 '</section>'+
@@ -453,7 +476,7 @@
                 '<div class="row">'+
                 '<section class="col col-md-1">'+
                 '<label class="radio">'+
-                '<input type="radio" name="rad-ans-opt" id="rad-ans-opt">'+
+                '<input type="radio" name="rad_ans_opt_'+this.config.qid+'_'+this.config.stmp+'" id="rad_ans_opt_1_'+this.config.qid+'_'+this.config.stmp+'">'+
                 '<i></i>'+
                 '</label>'+
                 '</section>'+
@@ -477,7 +500,12 @@
                 '<input type="file" data-role="magic-overlay" data-target="#pictureBtn" data-edit="insertImage" style="opacity: 0; position: absolute; top: 0px; left: 0px; width: 37px; height: 30px;">'+
                 '</div>'+
                 '</div>'+
-                '<div id="editoroption_1_'+this.config.qid+'_'+this.config.stmp+'" class="well" style="padding: 5px !important" contenteditable="true">'+
+                '<div id="editoroption_1_'+this.config.qid+'_'+this.config.stmp+'" class="well" style="padding: 5px !important" contenteditable="true" onclick="$.getScript(\'http://localhost/qbank/qbadmin/public/js/plugin/bootstrap-wysiwyg/jquery.hotkeys.js\',function(){'+
+                '$.getScript(\'http://localhost/qbank/qbadmin/public/js/plugin/bootstrap-wysiwyg/bootstrap-wysiwyg.js\',function(){'+
+                '$(\'#editoroption_1_'+this.config.qid+'_'+this.config.stmp+'\').wysiwyg();'+
+                '$(\'#editoroption_1_'+this.config.qid+'_'+this.config.stmp+'\').cleanHtml();'+
+                '});'+
+                '});">'+
                 'Go ahead..'+
                 '</div>'+
                 '</section>'+
@@ -491,7 +519,7 @@
                 '<div class="row">'+
                 '<section class="col col-md-1">'+
                 '<label class="radio">'+
-                '<input type="radio" name="rad-ans-opt" id="rad-ans-opt">'+
+                '<input type="radio" name="rad_ans_opt_'+this.config.qid+'_'+this.config.stmp+'" id="rad_ans_opt_2_'+this.config.qid+'_'+this.config.stmp+'">'+
                 '<i></i>'+
                 '</label>'+
                 '</section>'+
@@ -515,7 +543,12 @@
                 '<input type="file" data-role="magic-overlay" data-target="#pictureBtn" data-edit="insertImage" style="opacity: 0; position: absolute; top: 0px; left: 0px; width: 37px; height: 30px;">'+
                 '</div>'+
                 '</div>'+
-                '<div id="editoroption_2_'+this.config.qid+'_'+this.config.stmp+'" class="well" style="padding: 5px !important" contenteditable="true">'+
+                '<div id="editoroption_2_'+this.config.qid+'_'+this.config.stmp+'" class="well" style="padding: 5px !important" contenteditable="true" onclick="$.getScript(\'http://localhost/qbank/qbadmin/public/js/plugin/bootstrap-wysiwyg/jquery.hotkeys.js\',function(){'+
+                '$.getScript(\'http://localhost/qbank/qbadmin/public/js/plugin/bootstrap-wysiwyg/bootstrap-wysiwyg.js\',function(){'+
+                '$(\'#editoroption_2_'+this.config.qid+'_'+this.config.stmp+'\').wysiwyg();'+
+                '$(\'#editoroption_2_'+this.config.qid+'_'+this.config.stmp+'\').cleanHtml();'+
+                '});'+
+                '});">'+
                 'Go ahead..'+
                 '</div>'+
                 '</section>'+
@@ -529,12 +562,12 @@
                 '<div class="row">'+
                 '<section class="col col-md-1">'+
                 '<label class="radio">'+
-                '<input type="radio" name="rad-ans-opt" id="rad-ans-opt4">'+
+                '<input type="radio" name="rad_ans_opt_'+this.config.qid+'_'+this.config.stmp+'" id="rad_ans_opt_3_'+this.config.qid+'_'+this.config.stmp+'">'+
                 '<i></i>'+
                 '</label>'+
                 '</section>'+
                 '<section class="col col-md-9">'+
-                '<div class="btn-toolbar edt-hidden" data-role="editor-toolbar" data-target="#editoroption4_'+this.config.qid+'_'+this.config.stmp+'">'+
+                '<div class="btn-toolbar edt-hidden" data-role="editor-toolbar" data-target="#editoroption_3_'+this.config.qid+'_'+this.config.stmp+'">'+
                 '<div class="btn-group">'+
                 '<a class="btn btn-primary" data-edit="bold" title="" data-original-title="Bold (Ctrl/Cmd+B)"><i class="glyphicon glyphicon-bold"></i></a>'+
                 '<a class="btn btn-primary" data-edit="italic" title="" data-original-title="Italic (Ctrl/Cmd+I)"><i class="glyphicon glyphicon-italic"></i></a>'+
@@ -554,7 +587,12 @@
                 '</div>'+
 
                 '</div>'+
-                '<div id="editoroption_3_'+this.config.qid+'_'+this.config.stmp+'" class="well" style="padding: 5px !important" contenteditable="true">'+
+                '<div id="editoroption_3_'+this.config.qid+'_'+this.config.stmp+'" class="well" style="padding: 5px !important" contenteditable="true" onclick="$.getScript(\'http://localhost/qbank/qbadmin/public/js/plugin/bootstrap-wysiwyg/jquery.hotkeys.js\',function(){'+
+                '$.getScript(\'http://localhost/qbank/qbadmin/public/js/plugin/bootstrap-wysiwyg/bootstrap-wysiwyg.js\',function(){'+
+                '$(\'#editoroption_3_'+this.config.qid+'_'+this.config.stmp+'\').wysiwyg();'+
+                '$(\'#editoroption_3_'+this.config.qid+'_'+this.config.stmp+'\').cleanHtml();'+
+                '});'+
+                '});">'+
                 'Go ahead..'+
                 '</div>'+
                 '</section>'+
@@ -568,7 +606,7 @@
                 '<div class="row">'+
                 '<section class="col col-md-1">'+
                 '<label class="radio">'+
-                '<input type="radio"  name="rad-ans-opt" id="rad-ans-opt5" style="border:1px solid #000000 !important">'+
+                '<input type="radio"  name="rad_ans_opt_'+this.config.qid+'_'+this.config.stmp+'" id="rad_ans_opt_4_'+this.config.qid+'_'+this.config.stmp+'" style="border:1px solid #000000 !important">'+
                 '<i></i>'+
                 '</label>'+
                 '</section>'+
@@ -592,7 +630,12 @@
                 '<input type="file" data-role="magic-overlay" data-target="#pictureBtn" data-edit="insertImage" style="opacity: 0; position: absolute; top: 0px; left: 0px; width: 37px; height: 30px;">'+
                 '</div>'+
                 '</div>'+
-                '<div id="editoroption_4_'+this.config.qid+'_'+this.config.stmp+'" class="well " style="padding: 5px !important" contenteditable="true">'+
+                '<div id="editoroption_4_'+this.config.qid+'_'+this.config.stmp+'" class="well" style="padding: 5px !important" contenteditable="true" onclick="$.getScript(\'http://localhost/qbank/qbadmin/public/js/plugin/bootstrap-wysiwyg/jquery.hotkeys.js\',function(){'+
+                '$.getScript(\'http://localhost/qbank/qbadmin/public/js/plugin/bootstrap-wysiwyg/bootstrap-wysiwyg.js\',function(){'+
+                '$(\'#editoroption_4_'+this.config.qid+'_'+this.config.stmp+'\').wysiwyg();'+
+                '$(\'#editoroption_4_'+this.config.qid+'_'+this.config.stmp+'\').cleanHtml();'+
+                '});'+
+                '});">'+
                 'Go ahead..'+
                 '</div>'+
                 '</section>'+
@@ -737,7 +780,7 @@
                     '<div class="row">'+
 
                     '<section class="col col-md-12">'+
-                    '<div class="multiple-choice anstypetemplate" question-type="multiple-choice">'+
+                    '<div class="multiple-choice anstypetemplate" question-type="multiple-choice" id="'+this.config.qid+'_'+this.config.stmp+'">'+
                     '<form class="smart-form" style="border:1px solid #c3c3c3">'+
                     '<header>'+
                     '<h1>Question <span class="qnum">'+this.config.qid+'</span></h1>'+
@@ -764,7 +807,12 @@
                     '<input type="file" data-role="magic-overlay" data-target="#pictureBtn" data-edit="insertImage" style="opacity: 0; position: absolute; top: 0px; left: 0px; width: 37px; height: 30px;">'+
                     '</div>'+
                     '</div>'+
-                    '<div id="editor_'+this.config.qid+'_'+this.config.stmp+'" class="well" style="padding: 5px !important" contenteditable="true">'+
+                    '<div id="editor_'+this.config.qid+'_'+this.config.stmp+'" class="well" style="padding: 5px !important" contenteditable="true" onclick="$.getScript(\'http://localhost/qbank/qbadmin/public/js/plugin/bootstrap-wysiwyg/jquery.hotkeys.js\',function(){'+
+                    '$.getScript(\'http://localhost/qbank/qbadmin/public/js/plugin/bootstrap-wysiwyg/bootstrap-wysiwyg.js\',function(){'+
+                    '$(\'#editor_'+this.config.qid+'_'+this.config.stmp+'\').wysiwyg();'+
+                    '$(\'#editor_'+this.config.qid+'_'+this.config.stmp+'\').cleanHtml();'+
+                    '});'+
+                    '});">'+
                     'Go ahead..'+
                     '</div>'+
                     '</section>'+
@@ -775,7 +823,7 @@
                     '<div class="row">'+
                     '<section class="col col-md-1">'+
                     '<label class="radio">'+
-                    '<input type="radio" name="rad-ans-opt" id="rad-ans-opt">'+
+                    '<input type="radio" name="rad_ans_opt_'+this.config.qid+'_'+this.config.stmp+'" id="rad_ans_opt_1_'+this.config.qid+'_'+this.config.stmp+'">'+
                     '<i></i>'+
                     '</label>'+
                     '</section>'+
@@ -799,7 +847,12 @@
                     '<input type="file" data-role="magic-overlay" data-target="#pictureBtn" data-edit="insertImage" style="opacity: 0; position: absolute; top: 0px; left: 0px; width: 37px; height: 30px;">'+
                     '</div>'+
                     '</div>'+
-                    '<div id="editoroption_1_'+this.config.qid+'_'+this.config.stmp+'" class="well" style="padding: 5px !important" contenteditable="true">'+
+                    '<div id="editoroption_1_'+this.config.qid+'_'+this.config.stmp+'" class="well" style="padding: 5px !important" contenteditable="true" onclick="$.getScript(\'http://localhost/qbank/qbadmin/public/js/plugin/bootstrap-wysiwyg/jquery.hotkeys.js\',function(){'+
+                    '$.getScript(\'http://localhost/qbank/qbadmin/public/js/plugin/bootstrap-wysiwyg/bootstrap-wysiwyg.js\',function(){'+
+                    '$(\'#editoroption_1_'+this.config.qid+'_'+this.config.stmp+'\').wysiwyg();'+
+                    '$(\'#editoroption_1_'+this.config.qid+'_'+this.config.stmp+'\').cleanHtml();'+
+                    '});'+
+                    '});">'+
                     'Go ahead..'+
                     '</div>'+
                     '</section>'+
@@ -813,7 +866,7 @@
                     '<div class="row">'+
                     '<section class="col col-md-1">'+
                     '<label class="radio">'+
-                    '<input type="radio" name="rad-ans-opt" id="rad-ans-opt">'+
+                    '<input type="radio" name="rad_ans_opt_'+this.config.qid+'_'+this.config.stmp+'" id="rad_ans_opt_2_'+this.config.qid+'_'+this.config.stmp+'">'+
                     '<i></i>'+
                     '</label>'+
                     '</section>'+
@@ -837,7 +890,12 @@
                     '<input type="file" data-role="magic-overlay" data-target="#pictureBtn" data-edit="insertImage" style="opacity: 0; position: absolute; top: 0px; left: 0px; width: 37px; height: 30px;">'+
                     '</div>'+
                     '</div>'+
-                    '<div id="editoroption_2_'+this.config.qid+'_'+this.config.stmp+'" class="well" style="padding: 5px !important" contenteditable="true">'+
+                    '<div id="editoroption_2_'+this.config.qid+'_'+this.config.stmp+'" class="well" style="padding: 5px !important" contenteditable="true" onclick="$.getScript(\'http://localhost/qbank/qbadmin/public/js/plugin/bootstrap-wysiwyg/jquery.hotkeys.js\',function(){'+
+                    '$.getScript(\'http://localhost/qbank/qbadmin/public/js/plugin/bootstrap-wysiwyg/bootstrap-wysiwyg.js\',function(){'+
+                    '$(\'#editoroption_2_'+this.config.qid+'_'+this.config.stmp+'\').wysiwyg();'+
+                    '$(\'#editoroption_2_'+this.config.qid+'_'+this.config.stmp+'\').cleanHtml();'+
+                    '});'+
+                    '});">'+
                     'Go ahead..'+
                     '</div>'+
                     '</section>'+
@@ -851,7 +909,7 @@
                     '<div class="row">'+
                     '<section class="col col-md-1">'+
                     '<label class="radio">'+
-                    '<input type="radio" name="rad-ans-opt" id="rad-ans-opt4">'+
+                    '<input type="radio" name="rad_ans_opt_'+this.config.qid+'_'+this.config.stmp+'" id="rad_ans_opt_3_'+this.config.qid+'_'+this.config.stmp+'">'+
                     '<i></i>'+
                     '</label>'+
                     '</section>'+
@@ -876,7 +934,12 @@
                     '</div>'+
 
                     '</div>'+
-                    '<div id="editoroption_3_'+this.config.qid+'_'+this.config.stmp+'" class="well" style="padding: 5px !important" contenteditable="true">'+
+                    '<div id="editoroption_3_'+this.config.qid+'_'+this.config.stmp+'" class="well" style="padding: 5px !important" contenteditable="true" onclick="$.getScript(\'http://localhost/qbank/qbadmin/public/js/plugin/bootstrap-wysiwyg/jquery.hotkeys.js\',function(){'+
+                    '$.getScript(\'http://localhost/qbank/qbadmin/public/js/plugin/bootstrap-wysiwyg/bootstrap-wysiwyg.js\',function(){'+
+                    '$(\'#editoroption_3_'+this.config.qid+'_'+this.config.stmp+'\').wysiwyg();'+
+                    '$(\'#editoroption_3_'+this.config.qid+'_'+this.config.stmp+'\').cleanHtml();'+
+                    '});'+
+                    '});">'+
                     'Go ahead..'+
                     '</div>'+
                     '</section>'+
@@ -890,7 +953,7 @@
                     '<div class="row">'+
                     '<section class="col col-md-1">'+
                     '<label class="radio">'+
-                    '<input type="radio"  name="rad-ans-opt" id="rad-ans-opt5" style="border:1px solid #000000 !important">'+
+                    '<input type="radio"  name="rad_ans_opt_'+this.config.qid+'_'+this.config.stmp+'" id="rad_ans_opt_4_'+this.config.qid+'_'+this.config.stmp+'" style="border:1px solid #000000 !important">'+
                     '<i></i>'+
                     '</label>'+
                     '</section>'+
@@ -914,7 +977,12 @@
                     '<input type="file" data-role="magic-overlay" data-target="#pictureBtn" data-edit="insertImage" style="opacity: 0; position: absolute; top: 0px; left: 0px; width: 37px; height: 30px;">'+
                     '</div>'+
                     '</div>'+
-                    '<div id="editoroption_4_'+this.config.qid+'_'+this.config.stmp+'" class="well " style="padding: 5px !important" contenteditable="true">'+
+                    '<div id="editoroption_4_'+this.config.qid+'_'+this.config.stmp+'" class="well" style="padding: 5px !important" contenteditable="true" onclick="$.getScript(\'http://localhost/qbank/qbadmin/public/js/plugin/bootstrap-wysiwyg/jquery.hotkeys.js\',function(){'+
+                    '$.getScript(\'http://localhost/qbank/qbadmin/public/js/plugin/bootstrap-wysiwyg/bootstrap-wysiwyg.js\',function(){'+
+                    '$(\'#editoroption_4_'+this.config.qid+'_'+this.config.stmp+'\').wysiwyg();'+
+                    '$(\'#editoroption_4_'+this.config.qid+'_'+this.config.stmp+'\').cleanHtml();'+
+                    '});'+
+                    '});">'+
                     'Go ahead..'+
                     '</div>'+
                     '</section>'+
@@ -1062,7 +1130,7 @@
                 '<form class="smart-form" style="border:1px solid #c3c3c3">'+
                 '<div class="row">'+
                 '<section class="col col-md-12">'+
-                '<div class="multiple-choice anstypetemplate" question-type="multiple-choice">'+
+                '<div class="multiple-choice anstypetemplate" question-type="multiple-choice" id="'+this.config.qid+'_'+this.config.stmp+'">'+
                 '<form class="smart-form" style="border:1px solid #c3c3c3">'+
                 '<header>'+
                 '<h1>Question <span class="qnum">'+this.config.qid+'</span></h1>'+
@@ -1070,7 +1138,7 @@
                 '<fieldset>'+
                 '<div class="row">'+
                 '<section  class="col col-md-12">'+
-                '<div class="btn-toolbar edt-hidden" data-role="editor-toolbar" data-target="#editorMain">'+
+                '<div class="btn-toolbar edt-hidden" data-role="editor-toolbar" data-target="#editor">'+
                 '<div class="btn-group">'+
                 '<a class="btn btn-primary" data-edit="bold" title="" data-original-title="Bold (Ctrl/Cmd+B)"><i class="glyphicon glyphicon-bold"></i></a>'+
                 '<a class="btn btn-primary" data-edit="italic" title="" data-original-title="Italic (Ctrl/Cmd+I)"><i class="glyphicon glyphicon-italic"></i></a>'+
@@ -1089,7 +1157,12 @@
                 '<input type="file" data-role="magic-overlay" data-target="#pictureBtn" data-edit="insertImage" style="opacity: 0; position: absolute; top: 0px; left: 0px; width: 37px; height: 30px;">'+
                 '</div>'+
                 '</div>'+
-                '<div id="editorMain" class="well" style="padding: 5px !important">'+
+                '<div id="editor_'+this.config.qid+'_'+this.config.stmp+'" class="well" style="padding: 5px !important" contenteditable="true" onclick="$.getScript(\'http://localhost/qbank/qbadmin/public/js/plugin/bootstrap-wysiwyg/jquery.hotkeys.js\',function(){'+
+                '$.getScript(\'http://localhost/qbank/qbadmin/public/js/plugin/bootstrap-wysiwyg/bootstrap-wysiwyg.js\',function(){'+
+                '$(\'#editor_'+this.config.qid+'_'+this.config.stmp+'\').wysiwyg();'+
+                '$(\'#editor_'+this.config.qid+'_'+this.config.stmp+'\').cleanHtml();'+
+                '});'+
+                '});">'+
                 'Go ahead..'+
                 '</div>'+
                 '</section>'+
@@ -1100,12 +1173,12 @@
                 '<div class="row">'+
                 '<section class="col col-md-1">'+
                 '<label class="radio">'+
-                '<input type="radio" name="rad-ans-opt" id="rad-ans-opt">'+
+                '<input type="radio" name="rad_ans_opt_'+this.config.qid+'_'+this.config.stmp+'" id="rad_ans_opt_1_'+this.config.qid+'_'+this.config.stmp+'">'+
                 '<i></i>'+
                 '</label>'+
                 '</section>'+
                 '<section class="col col-md-9">'+
-                '<div class="btn-toolbar edt-hidden" data-role="editor-toolbar" data-target="#editoroptionMain_'+this.config.qid+'_'+this.config.stmp+'">'+
+                '<div class="btn-toolbar edt-hidden" data-role="editor-toolbar" data-target="#editoroption_1_'+this.config.qid+'_'+this.config.stmp+'">'+
                 '<div class="btn-group">'+
                 '<a class="btn btn-primary" data-edit="bold" title="" data-original-title="Bold (Ctrl/Cmd+B)"><i class="glyphicon glyphicon-bold"></i></a>'+
                 '<a class="btn btn-primary" data-edit="italic" title="" data-original-title="Italic (Ctrl/Cmd+I)"><i class="glyphicon glyphicon-italic"></i></a>'+
@@ -1124,7 +1197,12 @@
                 '<input type="file" data-role="magic-overlay" data-target="#pictureBtn" data-edit="insertImage" style="opacity: 0; position: absolute; top: 0px; left: 0px; width: 37px; height: 30px;">'+
                 '</div>'+
                 '</div>'+
-                '<div id="editoroptionMain_'+this.config.qid+'_'+this.config.stmp+'" class="well" style="padding: 5px !important">'+
+                '<div id="editoroption_'+this.config.qid+'_'+this.config.stmp+'" class="well" style="padding: 5px !important" contenteditable="true" onclick="$.getScript(\'http://localhost/qbank/qbadmin/public/js/plugin/bootstrap-wysiwyg/jquery.hotkeys.js\',function(){'+
+                '$.getScript(\'http://localhost/qbank/qbadmin/public/js/plugin/bootstrap-wysiwyg/bootstrap-wysiwyg.js\',function(){'+
+                '$(\'#editoroption_1_'+this.config.qid+'_'+this.config.stmp+'\').wysiwyg();'+
+                '$(\'#editoroption_1_'+this.config.qid+'_'+this.config.stmp+'\').cleanHtml();'+
+                '});'+
+                '});">'+
                 'Go ahead..'+
                 '</div>'+
                 '</section>'+
@@ -1138,12 +1216,12 @@
                 '<div class="row">'+
                 '<section class="col col-md-1">'+
                 '<label class="radio">'+
-                '<input type="radio" name="rad-ans-opt" id="rad-ans-opt">'+
+                '<input type="radio" name="rad_ans_opt_'+this.config.qid+'_'+this.config.stmp+'" id="rad_ans_opt_2_'+this.config.qid+'_'+this.config.stmp+'">'+
                 '<i></i>'+
                 '</label>'+
                 '</section>'+
                 '<section class="col col-md-9">'+
-                '<div class="btn-toolbar edt-hidden" data-role="editor-toolbar" data-target="#editoroption3">'+
+                '<div class="btn-toolbar edt-hidden" data-role="editor-toolbar" data-target="#editoroption_2_">'+
                 '<div class="btn-group">'+
                 '<a class="btn btn-primary" data-edit="bold" title="" data-original-title="Bold (Ctrl/Cmd+B)"><i class="glyphicon glyphicon-bold"></i></a>'+
                 '<a class="btn btn-primary" data-edit="italic" title="" data-original-title="Italic (Ctrl/Cmd+I)"><i class="glyphicon glyphicon-italic"></i></a>'+
@@ -1162,7 +1240,12 @@
                 '<input type="file" data-role="magic-overlay" data-target="#pictureBtn" data-edit="insertImage" style="opacity: 0; position: absolute; top: 0px; left: 0px; width: 37px; height: 30px;">'+
                 '</div>'+
                 '</div>'+
-                '<div id="editoroption3" class="well" style="padding: 5px !important">'+
+                '<div id="editoroption_2_'+this.config.qid+'_'+this.config.stmp+'" class="well" style="padding: 5px !important" contenteditable="true" onclick="$.getScript(\'http://localhost/qbank/qbadmin/public/js/plugin/bootstrap-wysiwyg/jquery.hotkeys.js\',function(){'+
+                '$.getScript(\'http://localhost/qbank/qbadmin/public/js/plugin/bootstrap-wysiwyg/bootstrap-wysiwyg.js\',function(){'+
+                '$(\'#editoroption_2_'+this.config.qid+'_'+this.config.stmp+'\').wysiwyg();'+
+                '$(\'#editoroption_2_'+this.config.qid+'_'+this.config.stmp+'\').cleanHtml();'+
+                '});'+
+                '});">'+
                 'Go ahead..'+
                 '</div>'+
                 '</section>'+
@@ -1176,12 +1259,12 @@
                 '<div class="row">'+
                 '<section class="col col-md-1">'+
                 '<label class="radio">'+
-                '<input type="radio" name="rad-ans-opt" id="rad-ans-opt4">'+
+                '<input type="radio" name="rad_ans_opt_'+this.config.qid+'_'+this.config.stmp+'" id="rad_ans_opt_3_'+this.config.qid+'_'+this.config.stmp+'">'+
                 '<i></i>'+
                 '</label>'+
                 '</section>'+
                 '<section class="col col-md-9">'+
-                '<div class="btn-toolbar edt-hidden" data-role="editor-toolbar" data-target="#editoroption4">'+
+                '<div class="btn-toolbar edt-hidden" data-role="editor-toolbar" data-target="#editoroption_3_'+this.config.qid+'_'+this.config.stmp+'">'+
                 '<div class="btn-group">'+
                 '<a class="btn btn-primary" data-edit="bold" title="" data-original-title="Bold (Ctrl/Cmd+B)"><i class="glyphicon glyphicon-bold"></i></a>'+
                 '<a class="btn btn-primary" data-edit="italic" title="" data-original-title="Italic (Ctrl/Cmd+I)"><i class="glyphicon glyphicon-italic"></i></a>'+
@@ -1201,7 +1284,12 @@
                 '</div>'+
 
                 '</div>'+
-                '<div id="editoroption4" class="well" style="padding: 5px !important">'+
+                '<div id="editoroption_3_'+this.config.qid+'_'+this.config.stmp+'" class="well" style="padding: 5px !important" contenteditable="true" onclick="$.getScript(\'http://localhost/qbank/qbadmin/public/js/plugin/bootstrap-wysiwyg/jquery.hotkeys.js\',function(){'+
+                '$.getScript(\'http://localhost/qbank/qbadmin/public/js/plugin/bootstrap-wysiwyg/bootstrap-wysiwyg.js\',function(){'+
+                '$(\'#editoroption_3_'+this.config.qid+'_'+this.config.stmp+'\').wysiwyg();'+
+                '$(\'#editoroption_3_'+this.config.qid+'_'+this.config.stmp+'\').cleanHtml();'+
+                '});'+
+                '});">'+
                 'Go ahead..'+
                 '</div>'+
                 '</section>'+
@@ -1215,12 +1303,12 @@
                 '<div class="row">'+
                 '<section class="col col-md-1">'+
                 '<label class="radio">'+
-                '<input type="radio"  name="rad-ans-opt" id="rad-ans-opt5" style="border:1px solid #000000 !important">'+
+                '<input type="radio"  name="rad_ans_opt_'+this.config.qid+'_'+this.config.stmp+'" id="rad_ans_opt_4_'+this.config.qid+'_'+this.config.stmp+'" style="border:1px solid #000000 !important">'+
                 '<i></i>'+
                 '</label>'+
                 '</section>'+
                 '<section class="col col-md-9">'+
-                '<div class="btn-toolbar edt-hidden" data-role="editor-toolbar" data-target="#editoroption5">'+
+                '<div class="btn-toolbar edt-hidden" data-role="editor-toolbar" data-target="#editoroption_4_">'+
                 '<div class="btn-group">'+
                 '<a class="btn btn-primary" data-edit="bold" title="" data-original-title="Bold (Ctrl/Cmd+B)"><i class="glyphicon glyphicon-bold"></i></a>'+
                 '<a class="btn btn-primary" data-edit="italic" title="" data-original-title="Italic (Ctrl/Cmd+I)"><i class="glyphicon glyphicon-italic"></i></a>'+
@@ -1239,7 +1327,12 @@
                 '<input type="file" data-role="magic-overlay" data-target="#pictureBtn" data-edit="insertImage" style="opacity: 0; position: absolute; top: 0px; left: 0px; width: 37px; height: 30px;">'+
                 '</div>'+
                 '</div>'+
-                '<div id="editoroption5" class="well " style="padding: 5px !important">'+
+                '<div id="editoroption_4_'+this.config.qid+'_'+this.config.stmp+'" class="well" style="padding: 5px !important" contenteditable="true" onclick="$.getScript(\'http://localhost/qbank/qbadmin/public/js/plugin/bootstrap-wysiwyg/jquery.hotkeys.js\',function(){'+
+                '$.getScript(\'http://localhost/qbank/qbadmin/public/js/plugin/bootstrap-wysiwyg/bootstrap-wysiwyg.js\',function(){'+
+                '$(\'#editoroption_4_'+this.config.qid+'_'+this.config.stmp+'\').wysiwyg();'+
+                '$(\'#editoroption_4_'+this.config.qid+'_'+this.config.stmp+'\').cleanHtml();'+
+                '});'+
+                '});">'+
                 'Go ahead..'+
                 '</div>'+
                 '</section>'+
@@ -1394,6 +1487,7 @@
             parentCont:"",
             qtype:"",
             qoptId :"",
+            tstamp:"",
             addOpt : "",//optionRow,
             removeOption :""
 
@@ -1409,6 +1503,7 @@
         qbankTempFunction.prototype.init = function(){
 
             var did = 1;
+            this.config.qoptId = this.config.qoptId + 1
             var rel = this.config.parentCont.attr('question-type');
             console.log(rel);
             if(rel ==="multiple-choice"){
@@ -1416,12 +1511,12 @@
                     '<section class="col col-md-1">'+
 
                     '<label class="radio">'+
-                    '<input type="radio" name="rad-ans-opt" id="rad-ans-opt">'+
+                    '<input type="radio" name="rad_ans_opt_'+this.config.qid+'_'+this.config.tstamp+'" id="rad_ans_opt_'+this.config.qoptId+'_'+this.config.qid+'_'+this.config.tstamp+' ">'+
                     '<i></i>'+
                     '</label>'+
                     '</section>'+
                     '<section class="col col-md-9">'+
-                    '<div class="btn-toolbar edt-hidden" data-role="editor-toolbar" data-target="#editor'+did+'">'+
+                    '<div class="btn-toolbar edt-hidden" data-role="editor-toolbar" data-target="#editoroption_'+this.config.qoptId+'_'+this.config.qid+'_'+this.config.tstamp+'">'+
 
                     '<div class="btn-group">'+
                     '<a class="btn btn-primary" data-edit="bold" title="" data-original-title="Bold (Ctrl/Cmd+B)"><i class="glyphicon glyphicon-bold"></i></a>'+
@@ -1443,8 +1538,12 @@
                     '<input type="file" data-role="magic-overlay" data-target="#pictureBtn" data-edit="insertImage" style="opacity: 0; position: absolute; top: 0px; left: 0px; width: 37px; height: 30px;">'+
                     '</div>'+
                     '</div>'+
-
-                    '<div id="editor_'+this.config.qoptId+'_'+this.config.qid+'" class="well" style="padding: 5px !important" contenteditable="true">'+
+                    '<div id="editoroption_'+this.config.qoptId+'_'+this.config.qid+'_'+this.config.tstamp+'" class="well" style="padding: 5px !important" contenteditable="true" onclick="$.getScript(\'http://localhost/qbank/qbadmin/public/js/plugin/bootstrap-wysiwyg/jquery.hotkeys.js\',function(){'+
+                    '$.getScript(\'http://localhost/qbank/qbadmin/public/js/plugin/bootstrap-wysiwyg/bootstrap-wysiwyg.js\',function(){'+
+                    '$(\'#editoroption_'+this.config.qoptId+'_'+this.config.qid+'_'+this.config.tstamp+'\').wysiwyg();'+
+                    '$(\'#editoroption_'+this.config.qoptId+'_'+this.config.qid+'_'+this.config.tstamp+'\').cleanHtml();'+
+                    '});'+
+                    '});">'+
                     'Go ahead..'+
                     '</div>'+
                     '</section>'+
@@ -1458,7 +1557,7 @@
             }else if(rel ==="single-answer"){
                 this.element.parents("div.row").eq(0).after('<div class="row">'+
                     '<section  class="col col-md-9">'+
-                    '<div class="btn-toolbar edt-hidden" data-role="editor-toolbar" data-target="#editor_'+this.config.qoptId+'_'+this.config.qid+'">'+
+                    '<div class="btn-toolbar edt-hidden" data-role="editor-toolbar" data-target="#editoroption_'+this.config.qoptId+'_'+this.config.qid+'_'+this.config.tstamp+'">'+
                     '<div class="btn-group">'+
                     '<a class="btn btn-primary" data-edit="bold" title="" data-original-title="Bold (Ctrl/Cmd+B)"><i class="glyphicon glyphicon-bold"></i></a>'+
                     '<a class="btn btn-primary" data-edit="italic" title="" data-original-title="Italic (Ctrl/Cmd+I)"><i class="glyphicon glyphicon-italic"></i></a>'+
@@ -1477,7 +1576,12 @@
                     '<input type="file" data-role="magic-overlay" data-target="#pictureBtn" data-edit="insertImage" style="opacity: 0; position: absolute; top: 0px; left: 0px; width: 37px; height: 30px;">'+
                     '</div>'+
                     '</div>'+
-                    '<div id="editor_'+this.config.qoptId+'_'+this.config.qid+'" class="well" style="padding-bottom: 5px !important" contenteditable="true">'+
+                    '<div id="editoroption_'+this.config.qoptId+'_'+this.config.qid+'_'+this.config.tstamp+'" class="well" style="padding: 5px !important" contenteditable="true" onclick="$.getScript(\'http://localhost/qbank/qbadmin/public/js/plugin/bootstrap-wysiwyg/jquery.hotkeys.js\',function(){'+
+                    '$.getScript(\'http://localhost/qbank/qbadmin/public/js/plugin/bootstrap-wysiwyg/bootstrap-wysiwyg.js\',function(){'+
+                    '$(\'#editoroption_'+this.config.qoptId+'_'+this.config.qid+'_'+this.config.tstamp+'\').wysiwyg();'+
+                    '$(\'#editoroption_'+this.config.qoptId+'_'+this.config.qid+'_'+this.config.tstamp+'\').cleanHtml();'+
+                    '});'+
+                    '});">'+
                     'Go ahead..'+
                     '</div>'+
                     '</section>'+

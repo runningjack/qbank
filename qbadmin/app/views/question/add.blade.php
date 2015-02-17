@@ -161,6 +161,7 @@ include("inc/ribbon.php");
         <div class="widget-body ">
         <div class="widget-body-toolbar">
             <div class="row">
+
                 <div class="col-xs-9 col-sm-5 col-md-5 col-lg-5">
                     <div class="row" style="color:#333 !important">
                         <section class="col col-md-6">
@@ -181,6 +182,8 @@ include("inc/ribbon.php");
 
                 </div>
             </div>
+
+
         </div>
         <div class="row">
 
@@ -236,7 +239,6 @@ include("inc/ribbon.php");
     </div>
 </article>
 
-    <div id="sectionBB23">uyyu</div>
 </div>
 
 </section>
@@ -277,41 +279,31 @@ include ("inc/scripts.php");
     $(function () { $("[data-toggle='tooltip']").tooltip(); });
     $(function () { $(".popover-options a").popover({html : true });});
     $("[rel=tooltip]").tooltip({html:true});
-    $.getScript('<?php echo ASSETS_URL; ?>/js/plugin/bootstrap-wysiwyg/jquery.hotkeys.js',function(){
+    /*$.getScript('<?php echo ASSETS_URL; ?>/js/plugin/bootstrap-wysiwyg/jquery.hotkeys.js',function(){
         $.getScript('<?php echo ASSETS_URL; ?>/js/plugin/bootstrap-wysiwyg/bootstrap-wysiwyg.js',function(){
-
             $("div[id^='editor']").wysiwyg();
             $("div[id^='editor']").cleanHtml();
-
         });
-    });
+    });*/
 
 
+    var globals = { 'add_opt_count':0,'bestmarktbuy':1.1,'consideration':0,}
 
 
     $(document).ready(function() {
         var hoverdiv ="";
+        var globals =
         CKEDITOR.replace( 'ckeditor', { height: '380px', startupFocus : true} );
 
         $("div#arena, div#arena2").on("click","div[id^='editor']",function(){
-                var thisEdtControl  = $(this).siblings("div.btn-toolbar")
+                var thisEdtControl  = $(this).siblings("div.btn-toolbar:first")
                 var edtControls     = $("div.btn-toolbar");edtControls.addClass("edt-hidden").removeClass("edt-focused");thisEdtControl.addClass("edt-focused").removeClass("edt-hidden")
                 $(this).css("border","2px solid #3276b1 !important;")
-            $(this).selectize({
-                plugins: ['remove_button'],
-                delimiter: ',',
-                persist: false,
-                create: function(input) {
-                    return {
-                        value: input,
-                        text: input
-                    }
-                }
-            });
+
 
             //})
         })
-        /*
+         /*
         * Selectize functionality
         * allow user to add tags
         * to search question
@@ -321,8 +313,8 @@ include ("inc/scripts.php");
         $("#arena, div#arena2").on("mouseenter",".stag",function(e){
 
 
-        })
-            **/
+        })**/
+
         /*
         * This allows user to select a question type
         * an a template is loaded on selecting
@@ -330,8 +322,6 @@ include ("inc/scripts.php");
         * */
 
         $("#seltor").on("change",function(){
-
-
             if($("#seltor").val()==1){
                 $("div#arena").removeClass("edt-hidden").addClass("edt-focused")
                 $("div#arena2").removeClass("edt-focused").addClass("edt-hidden");
@@ -350,9 +340,10 @@ include ("inc/scripts.php");
             }else if($("#seltor").val()==2){
                 $("div#arena").removeClass("edt-hidden").addClass("edt-focused")
                 $("div#arena2").removeClass("edt-focused").addClass("edt-hidden");
+                var q = $("header h1:contains(Question)").size()+1
                 $("div#arena2 .optionarena").html("")
                 $("div#arena").qbankTemp({
-                    qid :"",
+                    qid :q,
                     temp:"Multiple Choice",
                     action:"insert",
                     pqid:"",
@@ -378,35 +369,13 @@ include ("inc/scripts.php");
                    qoptId :""
                });
             }
-
-            $("div[id^='editor']").wysiwyg();
-            $("div[id^='editor']").cleanHtml();
-
-
         })
 
         /*
         * Adding new child template in section type
         * of question
         * */
-        $("div[id^='sectionBB']").on("click",".stag",function(){
-console.log($(this));
-            $.getScript('<?php echo ASSETS_URL; ?>/js/plugin/selectize/selectize.min.js',function(){
 
-            });
-
-            $(this).selectize({
-                plugins: ['remove_button'],
-                delimiter: ',',
-                persist: false,
-                create: function(input) {
-                    return {
-                        value: input,
-                        text: input
-                    }
-                }
-            });
-        })
 
         $("div#arena2").on("click","#multichoice",function(e){
             var q = $("header h1:contains(Question)").size()
@@ -444,7 +413,6 @@ console.log($(this));
         * */
 
         $("div#arena2").on("mouseenter",".tab-main",function(e){
-
             $(this).each(function(e){
                 //console.log($(this))
                 hoverdiv = $("<div class='mydiv' ></div>")
@@ -453,37 +421,38 @@ console.log($(this));
                 $(this).wrap(hoverdiv)
                 $(this).prepend("<a href='javascript:void(0);' class='btn btn-danger section-remove'>Remove</a>")
             })
-
         }).on("mouseleave",".tab-main",function(e){
              $(this).each(function(e){
                  //console.log($(this))
-
                  $("a.section-remove").each(function(){
                      $(this).remove();
                  })
                  //$(this).siblings("a").remove()
                  $(this).unwrap("<div class='mydiv'></div>")
-
              })
-
          })
 
         /*
         * this section is used to add
         * more input
         * */
-        $("#arena, div#arena2").on("click",".add-option",function(e){
-            var c = $(this).parents('div.anstypetemplate')
-            var oids = c.children($("div[id^='editoroption']")).size()
-            var q = $("header h1:contains(Question)").size()
-            var qid = c.find($("span.qnum")).text()
-            console.log(qid);
+
+         $("#arena, div#arena2").on("click",".add-option",function(e){
+
+            var c           =   $(this).parents('div.anstypetemplate')
+            var tstamp      =   c.attr("id")
+            var ts          =   tstamp.split("_")
+            var oids        =   ($("div[id^='editoroption']")).size()
+
+            var q           =   $("header h1:contains(Question)").size()
+            var qid         =   c.find($("span.qnum")).text()
                 var did = $("div[id^='editor']").size() + 1;
                 var rel = c.attr('question-type');
                 $(this).qbankTempFunction({qid :"",
                     qid :q,
                     temp:"",
                     pqid:"",
+                    tstamp:ts[1],
                     parentCont:c,
                     qtype:rel,
                     qoptId :oids,
@@ -492,15 +461,14 @@ console.log($(this));
                 e.stopImmediatePropagation()
         })
 
-
-
         /*
         * This section is used to remove a question
         * block
         * */
 
-        $("div#arena, div#arena2").on("click",".section-remove",function(e){
+         $("div#arena, div#arena2").on("click",".section-remove",function(e){
             $(this).parents("div.mydiv").detach()
+
             var c = $(this).parents('div.anstypetemplate'),did = $("div[id^='editor']").size() + 1,q = $("header h1:contains(Question)").size()+ 1,x = 0
             /*
             * Renumbers the question after a section have been deleted
@@ -533,9 +501,6 @@ console.log($(this));
                 if($("div.mydiv").size() > 1){
                     $(this).parents("div.tab-main").unwrap("<div class='mydiv'></div>").eq(0)
                 }
-
-
-
             // alert($("div.tab-main").size());
                 $(this).parents("div.row").eq(0).detach()
             }else{
